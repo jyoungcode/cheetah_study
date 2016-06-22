@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Expedia</title>
+</head>
+<body>
+	<header> <!-- Header 시작 -->
+		<div class="container">
+			<h1> <!-- logo 시작 -->
+				<a href="#"><img src="#" alt="Expedia"></a>
+			</h1> <!-- logo 끝 -->
+			<nav>
+				<ul class="gnb"> <!-- nav 시작 -->
+					<li><a href="#">홈</a></li>
+					<li><a href="#">항공</a></li>
+					<li><a href="#">호텔</a></li>
+					<li><a href="#">특가상품</a></li>
+					<li><a href="#">렌트카</a></li>
+					<li><a href="#">쿠폰</a></li>
+				</ul>
+			</nav>
+			<div class="unb">
+				<span tabindex="0">English</span>
+				<div tabindex="0">
+					<span>고객센터</span>
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+				<a href="#">로그인</a>
+				<span><img src="#" alt="KOR"></span>
+			</div>
+		</div>
+	</header> <!-- Header 끝 -->
+	<main> <!-- Main 시작 -->
+		<section class="section-landing"> <!-- section-landing 시작 -->
+			<div class="contianer">
+				<h2>간편한 예약으로 특별한 여행을 시작하세요</h2>
+				<div class="search">
+					<form action="#" method="POST" >
+						<fieldset>
+							<legend>간편예약하기</legend>
+							<div>
+								<h3>항공편</h3>
+								<div>
+									<label><input type="radio" name="airline_type">왕복</label>
+									<label><input type="radio" name="airline_type">편도</label>
+								</div>
+							</div>
+							<div>
+								<label for="departure">출발</label>
+								<input type="text" id="departure" name="departure" placeholder="도시명 또는 공항명">
+							</div>
+							<div>
+								<label for="arrival">도착</label>
+								<input type="text" id="arrival" name="arrival" placeholder="도시명 또는 공항명">
+							</div>
+							<div>
+								<label>일정</label>
+								<div>
+									<div>
+										<span>출국일</span>
+										<button>추가</button>
+									</div>
+									<span>-</span>
+									<div>
+										<span>귀국일</span>
+										<button>추가</button>
+									</div>
+								</div>
+							</div>
+							<div>
+								<label for="people">인원</label>
+								<select name="people" id="people">
+									<option value="">성인 1명</option>
+								</select>
+							</div>
+							<div><button>상세조건검색</button></div>
+							<div>
+								<input type="checkbox" id="nonstop_only" name="nonstop_only">
+								<label for="nonstop_only">직항노선만 검색하기</label>
+							</div>
+							<button>항공편 검색</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</section> <!-- section-landing 끝 -->
+		<section class="section-promotion"> <!-- section-promotion 시작 -->
+			<div class="headline">	
+				<h2>전세계 <strong>500,000개 이상</strong>의 호텔 및 리조트</h2>
+				<p>190개 국가의 숙소와 항공편을 검색해보세요</p>
+			</div>
+			<div class="contents">
+				<ul>
+					<li>
+						<a href="#">
+							<figure class="city-image"></figure>
+							<h3>싱가포르</h3>
+							<span class="contry">싱가포르</span>
+							<div>
+								<span class="stars"></span>
+								<span class="review-point"><strong>3.9</strong>/5</span>
+								<span class="reviews">890개후기</span>
+							</div>
+							<p>마리나베이샌즈 호텔부터 유니버설 스튜디오까지! 호텔 50% + 항공권 20% 할인된 가격</p>
+							<span class="price"><strong>325,000원</strong>부터</span>
+							<span class="airlines">33개 항공편</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure class="city-image"></figure>
+							<h3>바르셀로나</h3>
+							<span class="contry">스페인</span>
+							<div>
+								<span class="stars"></span>
+								<span class="review-point"><strong>3.9</strong>/5</span>
+								<span class="reviews">532개후기</span>
+							</div>
+							<p>가우디의 명작 사그라다 파밀리아 성당을 얼리 버드 예약을 통해 가장 빨리 만나보세요.</p>
+							<span class="price"><strong>325,000원</strong>부터</span>
+							<span class="airlines">123개 항공편</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure class="city-image">
+								<span class="soldout">매.진.임.박</span>
+							</figure>
+							<h3>로마</h3>
+							<span class="contry">이탈리아</span>
+							<div>
+								<span class="stars"></span>
+								<span class="review-point"><strong>3.9</strong>/5</span>
+								<span class="reviews">1238후기</span>
+							</div>
+							<p>대표적인 관광지 콜로세움을 30% 할인된 가격에 만나보실 수 있습니다.</p>
+							<span class="price"><strong>325,000원</strong>부터</span>
+							<span class="airlines">123개 항공편</span>
+							<span class="discount-flag">5%</span>
+						</a>
+					</li>
+				</ul>
+				<button tabindex="0">이전</button>
+				<button tabindex="0">다음</button>
+				<ol>
+					<li tabindex="0"></li>
+					<li tabindex="0"></li>
+					<li tabindex="0"></li>
+					<li tabindex="0"></li>
+				</ol>
+			</div>
+		</section> <!-- section-promotion 끝 -->
+		<section class="section-recommendation"> <!-- section-recommendation 시작 -->
+			<div class="headline">
+				<h2>가고 싶은 곳 지금 바로 알아보세요</h2>
+				<p>나라마다 차별화된 할인률! 오직 익스피디아에서만!</p>
+			</div>
+			<div class="contents">
+				<ul>
+					<li>
+						<a href="#">라스베가스</a>
+						<span class="recommended">추천</span>
+					</li>
+					<li>
+						<a href="#">시애틀</a>
+						<span class="recommended">추천</span>
+					</li>
+					<li>
+						<a href="#">런던</a>
+						</li>
+					<li>
+						<a href="#">멜버른</a>
+						</li>
+					<li>
+						<a href="#">뉴욕</a>
+						</li>
+					<li>
+						<a href="#">호놀룰루</a>
+						</li>
+					<li>
+						<a href="#">벨기에</a>
+					</li>
+					<li><a href="#">+</a></li>
+				</ul>
+			</div>
+		</section> <!-- section-recommendation 끝 -->
+	</main>	<!-- section-main 끝 -->
+	<footer> <!-- footer 시작  -->
+		<div class="container">
+			<div class="footer-logo">
+				<a href="#"><img src="#" alt="Expedia"></a>
+			</div>
+			<div class="service">
+				<div class="cooperation">
+					<h4>제휴 서비스</h4>
+					<ul>
+						<li><a href="#">호텔추가</a></li>
+						<li><a href="#">여행사 전용 사이트</a></li>
+					</ul>
+					
+				</div>
+				<div class="family-site">
+					<h4>패밀리사이트</h4>
+					<ul lang="en-US">
+						<li><a href="#">AirAsia</a></li>
+						<li><a href="#">AirAsiaGo</a></li>
+						<li><a href="#">Trivago</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="footer-list">
+				<li><a href="#">호텔</a></li>
+				<li><a href="#">항공권</a></li>
+				<li><a href="#">에어텔</a></li>
+				<li><a href="#">최저가격보장</a></li>
+			</ul>
+			<ul class="footer-list">
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">개인정보 취급방침</a></li>
+			</ul>
+			<div>
+				<ul class="socials">
+					<li><a href="#">핀터레스트</a></li>
+					<li><a href="#">트위터</a></li>
+					<li><a href="#">페이스북</a></li>
+					<li><a href="#">구글+</a></li>
+				</ul>
+				<div class="lang-control">
+					<span tabindex="0">Korea(한국어)</span>
+					<ul>
+						<li>English(영어)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer> <!-- footer 끝 -->
+</body>
+</html>
