@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html lang="ko-KR" class="ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko-KR" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko-KR" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<head>
+  <!-- <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>Main &#124; Expedia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 모바일은 모바일 페이지에 맞게 css 설정 -->
+  <meta name="description" content="Instant Confirmation. Book Today! Save on Hotels, Cars and more.">
+  <!-- 네이트 사이트에서 description만 있는데. 실제 코드는 존재하고 로봇이 해석하는거 아닌가? -->
+  <meta name="keywords" content="호텔, 호텔 예약, 호텔 할인, 호텔 예약 사이트, 국내 호텔, 해외 호텔, 호텔 패키지, 저렴한 호텔, 항공권, 항공권 예약, 항공권 할인, 익스피디아">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Favicon: Favorite Icon -->
+  <link rel="shortcut icon" href="images/expedia-favicon.png">
+</head>
+<body>
+  <!-- before: 오전에 header , nav 까지 작업 -->
+  <!-- after : 나머지 작업 / 리팩토링 토론: 주석표기 , 의미구조화 신경씀, 접근성 신경, 유효성 -->
+  <!-- wrap 크게 의미 없지 않을까? -->
+  <div class="wrap">
+    <!-- header navigation -->
+    <header>
+      <h1>Expedia
+        <a href="https://www.expedia.co.kr/"><img src="./images/logo.png" alt="expedia logo" /></a>
+      </h1>
+      <div class="nav">
+        <ul>
+          <li>홈</li>
+          <li>항공</li>
+          <li>호텔</li>
+          <li>특가상품</li>
+          <li>렌트카</li>
+          <li>쿠폰</li>
+        </ul>
+        <ul>
+          <li>
+            <select name="language">
+                <option value="english">english</option>
+                <option value="korean">korean</option>
+                <option value="chinese">chinese</option>
+                <option value="Japanese">Japanese</option>
+                <option value="German">German</option>
+                <option value="French">French</option>
+            </select>
+          </li>
+          <li>
+            <select name="customer_service_center">
+                <option value="고객센터">고객센터</option>
+                <option value="faq">FAQ</option>
+            </select>
+          </li>
+          <li>
+            <a href="login.html">로그인</a>
+            <span><img src="./images/nation.png" alt="nation" /></span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- description <p>인 이유 head title이 아니라 그냥 문구여서.. -->
+      <!-- flight search -->
+      <section class="main_flight">
+        <div class="main_flight_des">
+          <p>간편한 예약으로 특별한 여행을 시작하세요</p>
+        </div>
+        <img src="./images/main.png" alt="항공편 검색" />
+          <div class="flight_search">
+            <form class="" action="index.html" method="get">
+              <ul>
+                <li>항공편
+                  <input id="round_trip" type="radio" name="flight-a-type" value=""><label for="shuttle">왕복</label>
+                  <input id="each_way" type="radio" name="flight-b-type" value=""><label for="each_way">편도</label>
+                </li>
+                <li>
+                  <label for="departure">출발</label>
+                  <input id="departure" type="text" name="departure-a" placeholder="도시명 또는 공항명" maxlength="20">
+                </li>
+                <li>
+                  <label for="arrive">도착</label>
+                  <input id="arrive" type="text" name="arrive-a" placeholder="도시명 또는 공항명" maxlength="20">
+                </li>
+                <li>
+                  <label for="direct">직항노선만 검색하기</label>
+                  <input id="direct" type="checkbox" name="direct-a">
+                </li>
+                <li>
+                  <label for="schedule">일정</label>
+                  <input id="schedule" type="text" name="schedule-a" placeholder="" maxlength="20">
+                </li>
+                <li>
+                  <label for="arrive">인원</label>
+                  <select name="persons">
+                    <option value="student">성인 1명</option>
+                    <option value="student">성인 1명</option>
+                  </select>
+                </li>
+                <li>
+                  <a href="#">상세조건검색</a>
+                </li>
+                <input type="submit" value="항공편 검색">
+              </ul>
+            </form>
+          </div><!-- flight_search -->
+      </section><!-- main_flight -->
+
+      <!-- Main product -->
+      <section class="main_product">
+        <div class="main_product_des">
+          <p>전세계 500,000개 이상의 호텔 및 리조트</p>
+          <p>190개 국가의 숙소와 항공편을 검색해보세요</p>
+        </div>
+        <img src="./images/main_product_img.png" alt="주요 상품" />
+
+        <!-- 카드 이미지 css 처리 이번만 인라인으로" -->
+        <div class="carousel">
+          <ul>
+            <li>
+              <a href="#" style="background:url(images/singapore.png) no-repeat; display:block; width:347px; height:218px;">
+                <h2>싱가포르
+                  <span>싱가포르</span>
+                  <a href="" class="grade"></a>
+                  <span>890개후기</span>
+                </h2>
+                <p>마리나베이샌즈 호텔부터 유니버셜 스튜디오까지!<br>
+                  호텔50% + 항공권20% 할인된 가격</p>
+                <div>325,000원부터<span>33개 항공편</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="#" style="background:url(images/barcelona.png) no-repeat; display:block; width:347px; height:218px;">
+                <h2>바르셀로나
+                  <span>스페인</span>
+                  <a href="" class="grade"></a>
+                  <span>532개후기</span>
+                </h2>
+                <p>가우디의 명작 사그라다 파밀리아 성당을<br>
+                  얼리 버드 예약을 통해 가장 빨리 만나보세요.</p>
+                <div>725,000원부터<span>173개 항공편</span></div>
+              </a>
+            </li>
+            <li>
+              <a href="#" style="background:url(images/roma.png) no-repeat; display:block; width:347px; height:218px;">
+                <h2>로마
+                  <span>이탈리아</span>
+                  <a href="" class="grade"></a>
+                  <span>1238개후기</span>
+                </h2>
+                <p>대표적인 관광지 콜로세움을 30% 할인된 가격에<br>
+                  만나보실 수 있습니다.</p>
+                <div>840,230원부터<span>7개 항공편</span></div>
+              </a>
+            </li>
+          </ul>
+          <div class="carousel_slide">
+            <a href="#prev" title="이전 슬라이드"></a>
+            <a href="#next" title="다음 슬라이드"></a>
+          </div>
+        </div>
+      </section><!-- main_product -->
+
+      <section class="main_nation">
+        <div class="main_nation_des">
+          <p>전세계 500,000개 이상의 호텔 및 리조트</p>
+          <p>190개 국가의 숙소와 항공편을 검색해보세요</p>
+        </div>
+        <ul>
+          <li><a href=""><span class="hide">라스베가스</span></a></li>
+          <li><a href=""><span class="hide">시애틀</span></a></li>
+          <li><a href=""><span class="hide">런던</span></a></li>
+          <li><a href=""><span class="hide">멜버른</span></a></li>
+          <li><a href=""><span class="hide">뉴욕</span></a></li>
+          <li><a href=""><span class="hide">호놀룰루</span></a></li>
+          <li><a href=""><span class="hide">벨기에</span></a></li>
+          <li><a href=""><span class="hide">+</span></a></li>
+        </ul>
+      </section><!-- main_nation -->
+    </main>
+    <footer>
+      <div class="container">
+        <img src="images/footer_logo.png" alt="logo" />
+        <section>
+          <article class="cooperate_service">
+            <h3>제휴 서비스</h3>
+            <ul>
+              <li><a href="#">호텔추가</a></li>
+              <li><a href="#">여행사 전용 사이트</a></li>
+            </ul>
+          </article>
+          <article class="cooperate_site">
+            <h3>패밀리 사이트</h3>
+            <ul>
+              <li><a href="#" lang="en">AirAsia</a></li>
+              <li><a href="#" lang="en">AirAsiaGo</a></li>
+              <li><a href="#" lang="en">Trivago</a></li>
+            </ul>
+          </article>
+          <div class="service_list">
+            <a href="#">호텔</a>
+            <a href="#">항공편</a>
+            <a href="#">에어텔</a>
+            <a href="#">최저가격보장</a>
+          </div>
+          <div class="consumer_center">
+            <a href="#">회사소개</a>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보 취급방침</a>
+          </div>
+          <div class="sns">
+            <ul>
+              <li><a href="#pikicast"></a></li>
+              <li><a href="#twitter"></a></li>
+              <li><a href="#facebbook"></a></li>
+              <li><a href="#google"></a></li>
+            </ul>
+          </div>
+          <div class="translation">
+            <div class="selector">
+              <span>Korea(한국어)</span>
+              <button type="button" name="button"></button>
+              <div class="list" style="display:none;">
+                <ul>
+                  <li><a href="korea">Korea(한국어)</a></li>
+                  <li><a href="english">English(영어)</a></li>
+                  <li><a href="chinese">Chinese(중국어)</a></li>
+                  <li><a href="japanese">Japanese(일본어)</a></li>
+                </ul>
+              </div>
+            </div><!--selector-->
+          </div><!--translation-->
+        </section>
+      </div><!--container-->
+    </footer>
+  </div><!--wrap-->
+</body>
+</html>
