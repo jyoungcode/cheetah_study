@@ -1,12 +1,4 @@
 # cheetah_study
-study practice 
 
-으헤헤헤헤헤
-내가 수정하고 있다
-저도저도
-
-22222
-
-ddowon 수정!
-d
-?
+** Push 하기 전에 Commit 목록 보고 최신업데이트로 pull 받고 난 뒤에
+자기 작업물 올리세요(push)**
