@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html lang="ko-KR" class="ie6"><![endif]-->
+<!--[if IE 7]><html lang="ko-KR" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="ko-KR" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<head>
+  <!-- <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8">
+  <title>회원가입</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 모바일은 모바일 페이지에 맞게 css 설정 -->
+  <meta name="description" content="독립GNB. 편리한 네이트. 네이트앱 · 네이트온 · 싸이메라 ... 입시 · 팬톡 · 아이돌24시 · 네이트Q. 더보기. 뉴스 · 날씨 · 스포츠 · 연예 · 아이돌24 · 랭킹뉴스.">
+  <!-- 네이트 사이트에서 description만 있는데. 실제 코드는 존재하고 로봇이 해석하는거 아닌가? -->
+  <meta name="keywords" content="네이트판, 네이트 ">
+  <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+  <!-- wrap은 전체를 가운데로 이동 시키키위한? -->
+  <div class="wrap">
+    <header>
+      <a href="http://www.nate.com/"><img src="./images/natehome.png" alt="네이트 홈" width="" height=""></a>
+      <nav>
+        <ul>
+          <!-- li 앞에 동그라미? -->
+          <li>1 약관동의</li>
+          <li>2 정보입력</li>
+          <li>3 본인확인</li>
+          <li>4 메일전송 완료</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form class="register_form" action="#" method="post">
+        <table border="1">
+          <caption>Nate 회원가입</caption>
+          <thead>
+            <tr>
+              <th>
+                프로필입력
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label for="register-id">아이디</label>
+              </td>
+              <td>
+                <!-- text 일때 value도 기입 안할시에 checked 처럼 되나? -->
+                <input type="text" id="register-id" name="id"  maxlength="40">
+                <span>@nate.com</span>
+                <span><button type="button" name="button">중복확인</button></span>
+              </td>
+              <td>
+                <span>영문소문자,숫자,조합<br>6~40자(-,_사용가능)</span>
+              </td>
+            </tr>
+            <tr>
+              <td>비밀번호</td>
+              <td><input type="text" id="register-password" name="password"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>안전한 비밀번호 관리를 위한 TIP!</td>
+            </tr>
+            <tr>
+              <td>비밀번호 확인</td>
+              <td><input type="text" id="register-password_confirm" name="password_confirm"></td>
+            </tr>
+            <tr>
+              <td>이름</td>
+              <td><input type="text" id="member_name" name="member_name"></td>
+            </tr>
+            <tr>
+              <td>이메일</td>
+              <td><input type="text" id="email_id" name="email_id">@
+                <span>
+                  <input type="text" id="email_address" name="email_address">
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <select name="register-nation">
+                  <option value="korea">korea (82)</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>성별</td>
+              <td>
+                <input id="register-male" name="gender-a-type" type="radio">
+                <label for="register-male">남자</label>
+                <span>
+                  <input id="register-Female" name="gender-a-type" type="radio">
+                  <label for="register-Female">여자</label>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>생년월일</td>
+              <td>
+                <select name="register-year">
+                  <option value="">년도</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <span>년</span>
+                </select>
+                <span>
+                <select name="register-month">
+                  <option value="">월</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <span>월</span>
+                </select>
+                </span>
+                <span>
+                <select name="register-day">
+                  <option value="">일</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <span>일</span>
+                </select>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>해외IP 차단</td>
+              <td>
+                <input id="ip_block_on" name="ip_block_on" type="radio">
+                <label for="ip_block_on">on</label>
+                <span>
+                  <input id="ip_block_off" name="ip_block_off" type="radio">
+                  <label for="ip_block_off">off</label>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>해외IP 차단이란?</td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" name="button">다음</button>
+      </form>
+    </main>
+    <footer>
+      <ul>
+        <li>서비스 이용약관</li>
+        <li>개인정보취급방췸</li>
+        <li>광고문의</li>
+        <li>네이트 고객센터</li>
+      </ul>
+        <address>Copyright@<a href="#">SK Communication.</a>All rights reserved.</address>
+    </footer>
+  </div>
+</body>
+</html>
