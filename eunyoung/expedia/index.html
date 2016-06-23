@@ -1,0 +1,220 @@
+    <!DOCTYPE html>
+    <html lang="ko-KR">
+    <head>
+    <!--
+        - 이전 index.html 파일은 PROMOTIONS까지 진행되었던 상태입니다.
+        - meta viewport선언은 오전에는 없었던 상태이나 그 부분을 추가 작업하여 완료하였습니다.
+    -->
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=945">
+      <meta name="description" content="익스피디아와 함께 스마트한 여행을 계획해 보세요. 비즈니스부터 5성급 호텔까지 당신의 여행에 가장 알맞은 국내 해외 호텔 및 에어텔 상품을 제공해드립니다. 세계 최대 글로벌 온라인 여행사로 전세계호텔을 최저가격보장해드립니다.">
+      <meta name="keywords" content="호텔, 호텔 예약, 호텔 할인, 호텔 예약 사이트, 국내 호텔, 해외 호텔, 호텔 패키지, 저렴한 호텔, 항공권, 항공권 예약, 항공권 할인, 익스피디아">
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      <title>Expdia</title>
+    </head>
+    <body>
+    <!-- Hearder Start -->
+    <header>
+    <div class="wrap">
+    <img src="img/logo.svg" alt="Expdia 웹사이트입니다."> 
+        <nav>
+            <ul>
+                <li><a href="#" alt="홈으로이동">홈</a></li>
+                <li><a href="#" alt="항공페이지로이동">항공</a></li>
+                <li><a href="#" alt="호텔페이지로이동">호텔</a></li>
+                <li><a href="#" alt="특가상품으로이동">특가상품</a></li>
+                <li><a href="#" alt="렌드페이지로이동">렌트카</a></li>
+                <li><a href="#" alt="쿠폰페이지로이동">쿠폰</a></li>
+            </ul>
+            <div class="language">
+                <select name="language">
+                    <option value="English" selected="selected">English</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Japanise">Japanise</option>
+                    <option value="Chinese">Chinese</option>
+                </select>
+            </div>
+            <div class="customer">
+                <select name="customer">
+                    <option value="English" selected="selected">English</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Japanise">Japanise</option>
+                    <option value="Chinese">Chinese</option>
+                 </select>  
+            </div>
+        </nav>
+    </header>
+    <!-- section landing-search Start -->
+    <section class="landing-search">
+        <h2>간편한 예약으로 특별한 여행을 시작하세요</h2>
+    <form>
+        <fieldset>
+        <legend>항공편 예약하기</legend>
+                <div class="flight">
+                    <p class="form-text">항공편</p>
+                    <!-- ID, for 를 엮어주는 이유는 접근성을 고려하여 지어주는게 좋다 -->
+                    <label for="state-active"><input type="radio" id="state-active" name="state-active">왕복</label>
+                    <label for="state-nomal"><input type="radio" id="state-normal" name="state-active">편도</label> 
+                </div>
+                <div class="departure">
+                    <p class="form-text">출발</p>
+                    <label><input type="text" id="state-normal" name="state-normal" placeholder="도시명 또는 공항명"></label>
+                </div>
+                <div class="arival">
+                    <p class="form-text">도착</p>
+                    <label><input type="text" id="input-component" name="input-component" placeholder="도시명 또는 공항명"></label>
+                </div>   
+                <div class="filter-search">
+                    <label><input type="checkbox"  id="filter-search" name="filter-search" checked="checked">직항노선만검색하기</label>
+                </div>
+                <div class="schedule">
+                    <p class="form-text">일정</p>
+                    <label><input type="text" id="input-component" name="input-component" placeholder="출국일 - 귀국일"></label>
+                </div>
+                <div class="schedule">
+                    <p class="form-text">인원</p>      
+                    <select name="language">
+                        <option value="성인 1명">성인1명</option>
+                        <option value="성인 2명">성인2명</option>
+                        <option value="성인 3명">성인3명</option>
+                        <option value="성인 4명">성인4명</option>
+                </div>
+                <div class="condition-search">
+                    <p><a href="https://www.expedia.co.kr/Tokyo-Hotels.d179900.Travel-Guide-Hotels?" alt="상세조건검색">상세조건검색</a></p>
+                </div>  
+                <div class="condition-search">
+                    <button><a href="#" alt="항공편 검색">항공편 검색</a></button>
+                    <input type="image" src="img/btn-CTA.png" alt="항공편 검색">
+                </div>
+        </fieldset> 
+    </form>    
+    </section>
+    <!-- section promation Start -->
+        <section class="PROMOTIONS">
+            <div class="promotion-headline">
+                <h2>전 세계 500,000개 이상의 호텔 및 리조트</h2>
+                <p>190개 국가의 숙소와 항공편을 검색해보세요</p>
+            </div>
+            <div class="item-singapore">
+            <ul>
+                <li>                   
+                    <figure>
+                        <img src="img/item-singapore.png" alt="싱가포르 사진">
+                    </figure>
+                </li>
+                <li>싱가포르</li>
+                <li>싱가포르</li>
+                <img src="img/star-rating.png" alt="싱가포르 후기평점">
+                <li>890개 후기</li>
+                <li>마리나베이샌즈 호텔부터 유니버설 스튜디오까지! 호텔 50% + 항공권 20% 할인된 가격</li>
+                <li><span class="star-rating">325,000원부터</span></li>
+                <li>33개 항공편</li>
+            </ul>
+            </div>
+            <div class="item-barcelona">
+            <ul>
+                <li>                   
+                    <figure>
+                        <img src="img/item-barcelona.png" alt="바르셀로나 사진">
+                    </figure>
+                </li>
+                <li>바르셀로나</li>
+                <li>스페인</li>
+                <img src="img/star-rating.png" alt="바르셀로나 후기평점">
+                <li>532개후기</li>
+                <li>가우디의 명작 사그라다 파밀리아 성당을 얼리 버드 예약을 통해 가장 빨리 만나보세요.</li>
+                <li><span class="star-rating">325,000원부터</span></li>
+                <li>33개 항공편</li>
+            </ul>
+            </div>
+            <div class="item-roma">
+            <ul>
+                <li>                   
+                    <figure>
+                        <img src="img/item-roma.png" alt="로마 사진">
+                    </figure>
+                </li>
+                <li>로마</li>
+                <li>이탈리아</li>
+                <img src="img/star-rating.png" alt="로마 후기평점">
+                <li>1238개 후기</li>
+                <li>대표적인 관광지 콜로세움을 30% 할인된 가격에 만나보실 수 있습니다.</li>
+                <li><span class="star-rating">325,000원부터</span></li>
+                <li>33개 항공편</li>
+            </ul>
+            </div>
+            </section>
+            <section class="components">
+                    <div class="pagenation">
+                        <ul>
+                            <li><a href="#"><img src="img/dot1.png" alt="슬라이드 첫번째 페이지"></a></li>
+                            <li><a href="#"><img src="img/dot2.png" alt="슬라이드 두번째 페이지"></a></li>
+                            <li><a href="#"><img src="img/dot3.png" alt="슬라이드 세번째 페이지"></a></li>
+                            <li><a href="#"><img src="img/dot4.png" alt="슬라이드 네번째 페이지"></a></li>
+                        </ul>
+                    </div>
+                 <button type="buttton"><</button>
+                 <button type="buttton">></button>   
+            </section>
+            <section class="RECOMMENDATIONS">
+                <div class="recommendation-headline">
+                    <h2>전세계 500,000개 이상의 호텔 및 리조트</h2>
+                    <p>190개 국가의 숙소와 항공편을 검색해보세요</p>
+                </div>
+                <ul>
+                    <li class="item-lasvegas"><a href="#">라스베가스<img src="img/item-lasvegas.png" alt="라스베가스"></a></li>
+                    <li class="item-seattle"><a href="#">시애틀<img src="img/item-seattle.png" alt="시애틀"></a></li>
+                    <li class="item-london"><a href="#">런던<img src="img/item-london.png" alt="런던"></a></li>
+                    <li class="item-london"><a href="#">멜버른<img src=img/item-melberune.png alt="멜버른"></a></li>
+                    <li class="item-melberune"><a href="#">뉴욕<img src="img/imte-newyork.png" alt="뉴욕"></a></li>
+                    <li class="item-newyork"><a href="#">호놀룰루<img src="img/item-honolulu.png" alt="호놀룰루"></a></li>
+                    <li class="item-honolulu"><a href="#">벨기에<img src="img/item-belguim.png" alt="벨기에"></a></li>
+                    <li class="item-belguim"><a href="#">+<img src="img/item-more.png" alt="더보기"></a></li>
+                </ul>
+            </section>
+            <!-- footer start -->
+            <section class="footer">        
+            <footer>
+                <div>
+                    <li><a href="#"><img src="img/logo.png" alt="Expedia"></a></li>
+                </div>
+                <ul>
+                    <li><span>제휴서비스</span></li>
+                    <li>호텔추가</li>
+                    <li><span>여행사 전용 사이트</span></li>
+                </ul>
+                <ul>
+                    <li><span>패밀리사이트</span></li>
+                    <li>AirAsia</li>
+                    <li>AirAsiaGo</li>
+                    <li>Trivago</li>
+                </ul>
+                <ul>
+                    <li>호텔</li>
+                    <li>항공편</li>
+                    <li>에어텔</li>
+                    <li>최저가격보장</li>
+                </ul>
+                <ul>
+                    <li>회사소개</li>
+                    <li>이용약관</li>
+                    <li>개인정보 취급방침</li>
+                </ul>
+                <div class="icons-social-media">
+                </div>
+                <div class="language-component">
+                <select name="language">
+                <option value="Korean" selected="selected">한국어</option>
+                <option value="English">영어</option>
+                <option value="Japanise">일본어</option>
+                <option value="Chinese">중국어</option>
+                </div>
+                </div>
+            </footer>
+            </section>
+            </div>
+        </body> 
+    </html>
+
