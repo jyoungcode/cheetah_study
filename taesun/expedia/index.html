@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>Expedia || Team Activity</title>
+  <meta name="description" content="This is the fastes online tourism service ever">
+  <meta name="keywords" content="expedia, tourism, hotel, reservation">
+</head>
+<body>
+  <img src="background.png" alt="배경화면 프라하">
+  <header>
+    <div class="main_nav">
+      <h1>
+        <img src="logo.png" alt="로고사진">
+      </h1>
+      <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">항공</a></li>
+        <li><a href="#">호텔</a></li>
+        <li><a href="#">특가상품</a></li>
+        <li><a href="#">렌트카</a></li>
+        <li><a href="#">쿠폰</a></li>
+      </ul>
+      <select name="language" id="language">
+        <option value="">English</option>
+      </select>
+      <select name="service_center" id="service_center">
+        <option value="">고객센터</option>
+      </select>
+      <a href="#"><span>로그인</span></a>
+      <img src="태극기.png" alt="태극기사진">
+    </div>
+  </header>
+  <div class="global_section">
+    <section class="section1">
+      <h2 class="sec1_slogon">간편한 예약으로 특별한 여행을 시작하세요</p>
+      <form action="search.php" id="search">
+        <fieldset class="search">
+          <legend>검색창</legend>
+          <label>항공편</label>
+          <input name="flight" type="radio" id="roundtrip"> 왕복
+          <input name="flight" type="radio" id="oneway"> 편도
+          <label for="departure">출발</label>
+          <input id="departure" type="text" placeholder="도시명 또는 공항명">
+          <label for="arrival">도착</label>
+          <input id="arrival" type="text" placeholder="도시명 또는 공항명">
+          <input type="checkbox" id=""just_direct_flight"">
+          <label for="just_direct_flight">직항노선만 검사하기</span>
+          <label for="journey">일정</label>
+          <input id="journey" type="text" placeholder="출국일 - 귀국일">
+          <label for="adult">인원</label>
+          <select id="adult">
+            <option value="one_adult">성인 1명</option>
+          </select>
+          <a href="#"><span>상세조건검색</span></a>
+          <input id="search_submit" type="submit" value="항공편 검색">
+        </fieldset>
+      </form>
+    </section>
+    <section class="section2">
+      <img class="sec2_background" src="world_map.png" alt="두번째섹션세계지도">
+      <h3 class="sec2_slogon">전세계 <span>500,000개 이상</span>의 호텔 및 리조트</h3>
+      <p class="sec2_desc">190개 국가의 숙소와 항공편을 검색해보세요</p>
+    </section>
+    <section id="section3">
+      <img class="sec3_head_photo" src="small_world_map.png" alt="세번째섹션작은세계지도">
+      <ul>
+        <li>
+          <img src="the_place_photo.png" alt="그곳">
+        </li>
+        <li>
+          <a href="#">싱가포르</a>
+        </li>
+        <li>싱가포르</li>
+        <li>별점</li>
+        <li>설명</li>
+        <hr>
+        <li>가격</li>
+      </ul>
+    </section>
+    <section id="section4">
+      <h3 class="sec4_slogon">가고 싶은 곳은 지금 바로 알아보세요</h3>
+      <p class="sec4_desc">나라마다 차별화된 할인률! 오직 익스피디아에서만!</p>
+    </section>
+    <img src="lasvegas.png" alt="라스베가스">
+    <p class="sec4_photo_name">라스베가스</p>
+    <img src="seattle.png" alt="시애틀">
+    <p class="sec4_photo_name">시애틀</p>
+    <img src="london.png" alt="런던">
+    <p class="sec4_photo_name">런던</p>
+    <img src="mebourne.png" alt="멜버른">
+    <p class="sec4_photo_name">멜버른</p>
+    <img src="newyork.ong" alt="뉴욕">
+    <p class="sec4_photo_name">뉴욕</p>
+    <img src="honollullu.png" alt="호놀룰루">
+    <p class="sec4_photo_name">호놀룰루</p>
+    <img src="belgium.png" alt="벨기에">
+    <p class="sec4_photo_name">벨기에</p>
+    <img src="plus.png" alt="플러스">
+    <p class="sec4_photo_name">+</p>
+  </div>
+  <footer>
+    <img class="logo_footer" src="logo_footer.png" alt="Expedia 로고">
+    <ul>
+      <li class="header_list">제휴 서비스</li>
+      <li><a href="#">호텔추가</a></li>
+      <li><a href="#">여행사 전용 사이트</a></li>
+    </ul>
+    <ul>
+      <li class="header_list">패밀리 사이트</li>
+      <li><a href="#">AirAsia</a></li>
+      <li><a href="#">AirAsiaGo</a></li>
+      <li><a href="#">Trivago</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">호텔</a></li>
+      <li><a href="#">항공편</a></li>
+      <li><a href="#">에어텔</a></li>
+      <li><a href="#">최저가격보장</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">회사소개</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">개인정보 취급방침</a></li>
+    </ul>
+    <a href="#">
+      <img src="pinterest.png" alt="핀터레스트"></a>
+    <a href="#">
+      <img src="twitter.png" alt="트위터"></a>
+    <a href="#">
+      <img src="facebook.png" alt="페이스북"></a>
+    <a href="#">
+      <img src="google.png" alt="구글"></a>
+      <select name="choose_lang" id="choose_lang">
+        <option value="korean">Korea(한국어)</option>
+      </select>
+  </footer>
+</body>
+</html>
