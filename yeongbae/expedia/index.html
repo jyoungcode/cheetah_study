@@ -25,11 +25,13 @@
   <div class="wrap">
     <!-- header navigation -->
     <header>
+      <!-- alt가 있는데 h1의 글씨만 넣지 않는다 -->
       <h1>Expedia
         <a href="https://www.expedia.co.kr/"><img src="./images/logo.png" alt="expedia logo" /></a>
       </h1>
       <div class="nav">
         <ul>
+          <!-- 넣기-->
           <li>홈</li>
           <li>항공</li>
           <li>호텔</li>
@@ -67,12 +69,16 @@
       <!-- flight search -->
       <section class="main_flight">
         <div class="main_flight_des">
+          <!-- h2로 적자 section -->
           <p>간편한 예약으로 특별한 여행을 시작하세요</p>
         </div>
         <img src="./images/main.png" alt="항공편 검색" />
           <div class="flight_search">
             <form class="" action="index.html" method="get">
+              <!-- div 처리? -->
+              <!-- placeholder span으로 아이콘 처리 : 현재 사이트-->
               <ul>
+                <!-- name, id ? -->
                 <li>항공편
                   <input id="round_trip" type="radio" name="flight-a-type" value=""><label for="shuttle">왕복</label>
                   <input id="each_way" type="radio" name="flight-b-type" value=""><label for="each_way">편도</label>
@@ -94,6 +100,7 @@
                   <input id="schedule" type="text" name="schedule-a" placeholder="" maxlength="20">
                 </li>
                 <li>
+                  <!-- custom 디자인이다 -->
                   <label for="arrive">인원</label>
                   <select name="persons">
                     <option value="student">성인 1명</option>
@@ -112,9 +119,11 @@
       <!-- Main product -->
       <section class="main_product">
         <div class="main_product_des">
-          <p>전세계 500,000개 이상의 호텔 및 리조트</p>
+          <!-- h2로 -->
+          <p>전세계 <strong>500,000개</strong> 이상의 호텔 및 리조트</p>
           <p>190개 국가의 숙소와 항공편을 검색해보세요</p>
         </div>
+        <!-- section bg를 주자 -->
         <img src="./images/main_product_img.png" alt="주요 상품" />
 
         <!-- 카드 이미지 css 처리 이번만 인라인으로" -->
@@ -124,6 +133,7 @@
               <a href="#" style="background:url(images/singapore.png) no-repeat; display:block; width:347px; height:218px;">
                 <h2>싱가포르
                   <span>싱가포르</span>
+                  <!-- 별점 링크 아니고 그냥 전체 페이지 -->
                   <a href="" class="grade"></a>
                   <span>890개후기</span>
                 </h2>
@@ -158,6 +168,7 @@
             </li>
           </ul>
           <div class="carousel_slide">
+            <!-- button a아님 -->
             <a href="#prev" title="이전 슬라이드"></a>
             <a href="#next" title="다음 슬라이드"></a>
           </div>
@@ -219,6 +230,7 @@
               <li><a href="#google"></a></li>
             </ul>
           </div>
+          <!-- span 안에 버튼을 넣어서 한국어,화살표 자체를 누르는걸 고민하자 -->
           <div class="translation">
             <div class="selector">
               <span>Korea(한국어)</span>
