@@ -10,4 +10,4 @@
 - [코드 최적화] 불 필요한 `<div>` 또는 `<span>` 요소의 남용은 없었는가?
 - [팀원간 소통] 코드는 읽기 쉽고, 간결한가?
 
-![over-the-shoulder-code-review](./images/main_code_review.png)
+![over-the-shoulder-code-review](./3_images/main_code_review.png)
