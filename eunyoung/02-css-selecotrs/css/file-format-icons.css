@@ -1,0 +1,136 @@
+@charset "utf-8";
+body {
+    margin: 5% 10%;
+}
+
+
+/*
+.reset-list 스타일 모듈
+기본적인 리스트 스타일 초기화
+저어~말 자주 사용되는 코드
+*/
+
+.reset-list ul,
+.reset-list ol,
+ul.reset-list,
+ol.reset-list {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+
+/*파일 타입 이미지 제공을 위한 기본 디자인*/
+
+.lecture-title {
+    font-weight: lighter;
+    font-weight: 200;
+}
+
+.lecture-file-list li {
+    padding-top: 0.26em;
+    padding-bottom: 0.26em;
+}
+
+.lecture-file-list a {
+    display: inline-block;
+    padding-top: 0.25em;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-indent: 1.4em;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/*파일 포멧에 따라 자동적으로 아이콘을
+배경 이미지로 설정하는 스타일*/
+a[href$=".link"] {
+    background-image: url("../images/link.png");
+    color: #fff;
+}
+a[href$=".pdf"] {
+    background-image: url("../images/pdf.png");
+    color: #cb0606;
+}
+
+a[href$=".doc"] {
+    background-image: url("../images/doc.png");
+    color: #067fcb;
+}
+
+a[href$=".xls"] {
+    background-image: url("../images/xls.png");
+    color: #79ac00;
+}
+
+a[href$=".jpg"] {
+    background-image: url("../images/jpg.png");
+    color: #e28500;
+}
+
+a[href$=".png"] {
+    background-image: url("../images/png.png");
+    color: #d15ae3;
+}
+
+a[href$=".mp3"] {
+    background-image: url("../images/mp3.png");
+    color: #4d47e1;
+}
+
+a[href$=".psd"] {
+    background-image: url("../images/psd.png");
+    color: #374285;
+}
+
+a[href$=".html"] {
+    background-image: url("../images/html.png");
+    color: #bbcacf;
+}
+
+a[href$=".gif"] {
+    background-image: url("../images/gif.png");
+    color: #ebc200;
+}
+
+a[href$=".mov"] {
+    background-image: url("../images/mov.png");
+    color: #76b8b7;
+}
+
+a[href$=".avi"] {
+    background-image: url("../images/avi.png");
+    color: #838383;
+}
+
+a[href$=".tiff"] {
+    background-image: url("../images/tiff.png");
+    color: #7b0000;
+}
+
+a[href$=".flac"] {
+    background-image: url("../images/flac.png");
+    color: #7342d8;
+}
+
+a[href$=".aac"] {
+    background-image: url("../images/aac.png");
+    color: #07ced5;
+}
+
+
+/* 배경이미지 컬러 적용 */
+
+body {
+    background-color: #1e1e1e;
+}
+
+
+/* h2 스타일 적용 */
+
+h2 {
+    color: #515151;
+    font-size: 32px;
+}
