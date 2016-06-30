@@ -1,0 +1,26 @@
+/* 라이센스 추가 */
+header {
+  width: 100%;
+  height: 50px;
+  background-color: yellow;
+}
+.wrap {
+  margin: 0 auto;
+  width: 80%;
+}
+header h1 a img {
+  /* width, height ? */
+  float: left;
+  padding-right: 20px;
+}
+.nav {
+
+}
+.nav ul li {
+  float: left;
+  padding-right: 20px;
+  list-style: none;
+}
+.hidden button {
+  display: none;
+}
