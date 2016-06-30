@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bugs</title>
+</head>
+<body>
+  <div class="main hidden" id="top">
+		<ul>
+			<li><a href="#">본문 바로가기</a></li>
+			<li><a href="#">메뉴 바로가기</a></li>
+			<li><a href="#">로그인 바로가기</a></li>
+			<li><a href="#">하단 정보 바로가기</a></li>
+		</ul>
+	</div><!-- main hidden -->
+
+  <header>
+    <div class="상단 고객메뉴">
+      <h1><a href="#">슈퍼사운드, 벅스</a></h1>
+      <div class="고객센터">
+        <ul>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">벅스캐스트</a></li>
+          <li>
+            <a href="#">게임</a>
+            <button></button>
+          </li>
+          <span class="hidden menu">
+          <ul>
+            <li><a href="#">한게임</a></li>
+            <li><a href="#">샷온라인</a></li>
+            <li><a href="#">피망</a></li>
+          </ul>
+        </span>
+        </ul>
+      </div><!-- 고객센터 -->
+
+      <div class="기타서비스">
+        <ul>
+          <!-- a태그에 이미지로 처리 span은 스크린리더를 위해서 -->
+          <li><a href="#"><span class="hidden">comico</span></a></li>
+          <li><a href="#"><span class="hidden">티켓링크</span></a></li>
+          <li><a href="#"><span class="hidden">hangame</span></a></li>
+        </ul>
+      </div><!-- 기타서비스 -->
+    </div><!-- 상단 고객메뉴 -->
+
+    <div class="상단 메인">
+      <h1><a href="#"><span class="hidden">Bugs</span></a></h1>
+      <div class="search">
+        <input type="text" name="name" value="" placeholder="요즘 핫한 KPOP 어떤건지 궁금해?">
+        <button type="button" name="button"></button>
+        <img src="images/search" alt="돋보기" />
+      </div><!-- search -->
+      <a href="#"></a>
+      <span class="login">
+        <span class="bell">
+          <a href="#">bell</a>
+        </span>
+        <div class="hidden">
+          <article class="alram">
+            <ul>
+              <li><a href="#">알림</a></li>
+              <li><a href="#">공지</a></li>
+            </ul>
+            <div class="">
+              <!-- 알림 내용을 li에 넣어야 할까? 아님 따로? -->
+              <!-- 알림에 id 달아서?? -->
+            </div>
+            <div class="">
+
+            </div>
+          </article>
+        </div>
+        <a href="#">로그인/회원가입</a>
+      </span>
+    </div>
+  </header>
+
+  <!-- nav -->
+  <nav>
+    <div class="구매">
+      <div class="이용권구매">
+        <img src="images/" alt="">
+        <a href="#이용권구매">이용권구매</a>
+      </div>
+      <div class="상품권등록">
+        <img src="images/" alt="">
+        <a href="#이용권구매">이용권구매</a>
+      </div>
+    </div><!-- 구매 -->
+
+    <!-- 전체 하면 안되는 이유 내앨범에 관리버튼이 있어서 -->
+    <ul>
+      <!-- what's hot -->
+      <li>
+        <img src="images/" alt="" />
+        <div class="what's hot inline-block">
+          What's Hot
+          <a href="#"><img src="images/direction" alt="화살표" /></a>
+          <div class="hidden menu">
+            <ul>
+              <li><a href="#">벅스차트</a></li>
+              <li><a href="#">뮤직4U</a></li>
+              <li><a href="#">최신</a></li>
+            </ul>
+          </div><!-- hidden menu -->
+        </div>
+      </li>
+
+      <!-- 테마/장르 -->
+      <li>
+        <img src="images/" alt="" />
+        <div class="테마/장르 inline-block">
+          테마/장르
+          <a href="#"><img src="images/direction" alt="화살표" /></a>
+          <div class="hidden menu">
+            <ul>
+              <li><a href="#">뮤직PD 앨범</a></li>
+              <li><a href="#">추천앨범 리뷰</a></li>
+              <li><a href="#">장르별</a></li>
+              <li><a href="#">연도별</a></li>
+              <li><a href="#">스페셜</a></li>
+              <li><a href="#">매니아</a></li>
+            </ul>
+          </div><!-- hidden menu -->
+        </div>
+      </li>
+
+      <!-- 벅스 on TV -->
+      <li>
+        <img src="images/" alt="" />
+        <div class="벅스 on TV inline-block">
+          벅스 on TV
+          <a href="#"><img src="images/direction" alt="화살표" /></a>
+          <div class="hidden menu">
+            <ul>
+              <li><a href="#"><img src="images/복면가왕" alt="" /></a></li>
+              <li><a href="#"><img src="images/듀엣가요제" alt="" /></a></li>
+              <li><a href="#"><img src="images/신의 목소리" alt="" /></a></li>
+              <li><a href="#"><img src="images/벅스 tv" alt="" /></a></li>
+            </ul>
+          </div><!-- hidden menu -->
+        </div>
+      </li>
+
+      <!-- 라디오 -->
+      <li>
+        <img src="images/radio" alt="radio" />
+        <a href="#">라디오</a>
+      </li>
+
+      <!-- FLAC 전용관 -->
+      <li>
+        <img src="images/flac" alt="radio" />
+        <a href="#">FLAC전용관</a>
+      </li>
+
+      <!-- 보관함 -->
+      <li>
+        <img src="images/" alt="" />
+        <div class="보관함 inline-block">
+          보관함
+          <a href="#"><img src="images/direction" alt="화살표" /></a>
+          <div class="hidden menu">
+            <ul>
+              <li><a href="#">구매한 음악</a></li>
+              <li><a href="#">좋아한 음악</a></li>
+            </ul>
+          </div><!-- hidden menu -->
+        </div>
+      </li>
+
+      <!-- 내 앨범 -->
+      <li>
+        <img src="images/" alt="" />
+        <div class="내 앨범 inline-block">
+          내 앨범
+          <a href="#관리">관리</a>
+          <a href="#"><img src="images/direction" alt="화살표" /></a>
+          <div class="hidden menu">
+            <ul>
+              <li><a href="#">+새로 만들기</a></li>
+              <li>
+                <a href="#">최근 들은 곡</a>
+                <button type="button" name="button" class="hidden">
+                  <a href="#팝업"></a>
+                </button>
+              </li>
+              <li>
+                <a href="#">가장 많이 들은 곡</a>
+                <button type="button" name="button" class="hidden">
+                  <a href="#팝업"></a>
+                </button>
+              </li>
+            </ul>
+          </div><!-- hidden menu -->
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 최신앨범 부터 메인 -->
+  <main>
+    <div class="main_album">
+      <!-- logo 다음으로 메인 컨텐츠 제목이니 h2를 쓰자 -->
+      <div class="main_top">
+        <h2>최신 앨범</h2>
+        <ul>
+          <li><a href="전체">전체</a></li>
+          <li><a href="국내">국내</a></li>
+          <li><a href="해외">해외</a></li>
+        </ul>
+        <!-- 가운데 버튼들 -->
+        <div class="carousel button">
+          <a href="ca_btn_list_1"></a>
+          <a href="ca_btn_list_2"></a>
+          <a href="ca_btn_list_3"></a>
+          <a href="ca_btn_list_4"></a>
+          <a href="ca_btn_list_5"></a>
+        </div>
+        <a href="#더보기">더 보기 &gt;</a>
+      </div><!-- main_top -->
+
+    <!-- 앨범 국내 해외는 DB에서 처리하고 10개씩만 나타낸다.(HOT,조회수,기간신보 이런식으로 SELECT 한다.) -->
+      <div class="album_set">
+        <div class="album_cd">
+          <div class="album_img">
+            <!-- HOT 구현 해야 할 듯 -->
+            <img src="images/system_아이언" alt="system_아이언" />
+            <button type="button" name="button"></button>
+          </div><!-- album_img -->
+          <a href="#앨범소개">SYSTEM</a>
+          <a href="#가수프로필">아이언</a>
+          <button type="button" name="button"></button>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- album_cd -->
+
+        <div class="album_cd">
+          <div class="album_img">
+            <img src="images/보컬전쟁_various artist" alt="보컬전쟁_various artist" />
+            <button type="button" name="button"></button>
+          </div><!-- album_img -->
+          <a href="#앨범소개">보컬전쟁_various artist</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- album_cd -->
+
+        <div class="album_cd">
+          <div class="album_img">
+            <img src="images/보컬전쟁_various artist" alt="보컬전쟁_various artist" />
+            <button type="button" name="button"></button>
+          </div><!--album_img-->
+          <a href="#앨범소개">보컬전쟁_various artist</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- album_cd -->
+
+        <div class="album_cd">
+          <div class="album_img">
+            <img src="images/보컬전쟁_various artist" alt="보컬전쟁_various artist" />
+            <button type="button" name="button"></button>
+          </div><!--album_img -->
+          <a href="#앨범소개">보컬전쟁_various artist</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- album_cd -->
+
+        <div class="album_cd">
+          <div class="album_img">
+            <img src="images/보컬전쟁_various artist" alt="보컬전쟁_various artist" />
+            <button type="button" name="button"></button>
+          </div><!--album_img-->
+          <a href="#앨범소개">보컬전쟁_various artist</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- album_cd -->
+
+        <div class="album_cd">
+          <div class="album_img">
+            <img src="images/보컬전쟁_various artist" alt="보컬전쟁_various artist" />
+            <button type="button" name="button"></button>
+          </div><!--album_img-->
+          <a href="#앨범소개">보컬전쟁_various artist</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- album_cd -->
+
+        <div class="album_cd">
+          <div class="album_img">
+            <img src="images/보컬전쟁_various artist" alt="보컬전쟁_various artist" />
+            <button type="button" name="button"></button>
+          </div><!-- album_img-->
+          <a href="#앨범소개">보컬전쟁_various artist</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- album_cd -->
+
+        <div class="album_cd">
+          <div class="album_img">
+            <img src="images/보컬전쟁_various artist" alt="보컬전쟁_various artist" />
+            <button type="button" name="button"></button>
+          </div><!--album_img-->
+          <a href="#앨범소개">보컬전쟁_various artist</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- album_cd -->
+
+        <div class="album_cd">
+          <div class="album_img">
+            <img src="images/보컬전쟁_various artist" alt="보컬전쟁_various artist" />
+            <button type="button" name="button"></button>
+          </div><!-- album_img-->
+          <a href="#앨범소개">보컬전쟁_various artist</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- album_cd -->
+
+        <div class="album_cd">
+          <div class="album_img">
+            <img src="images/보컬전쟁_various artist" alt="보컬전쟁_various artist" />
+            <button type="button" name="button"></button>
+          </div><!--album_img-->
+          <a href="#앨범소개">보컬전쟁_various artist</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- album_cd -->
+
+        <!-- 사이드 버튼 : 한칸 씩 이동 할때마다 위에 ca_btn_list를 순서대로 롤링한다. -->
+        <a href="#ca_btn_list"></a>
+      </div><!-- album_set -->
+    </div><!-- main_album -->
+
+    <div class="middle_img_box">
+      <ul>
+        <li><a href="신의목소리"></a></li>
+        <li><a href="브렛데덴"></a></li>
+        <li><a href="백예린"></a></li>
+        <li><a href="복면가왕"></a></li>
+        <li><a href="듀엣가요제"></a></li>
+      </ul>
+      <!-- album 이랑 버튼 모양 똑같다 -->
+      <div class="middle_img_box_ca_button">
+        <a href="ca_btn_list_1"></a>
+        <a href="ca_btn_list_2"></a>
+        <a href="ca_btn_list_3"></a>
+        <a href="ca_btn_list_4"></a>
+        <a href="ca_btn_list_5"></a>
+        <!-- 여긴 링크가 아니니 button으로 하자 -->
+        <button type="button" name="button"></button>
+      </div><!-- middle_img_box_ca_button -->
+    </div><!-- middle_img_box -->
+    <div class="middle_ad">
+      <a href="#중간광고"></a>
+    </div><!-- middle_ad -->
+
+    <!-- 곡 차트 -->
+    <div class="chart">
+      <table border="1">
+        <caption>곡 차트</caption><!-- caption 숨기기 -->
+        <thead>
+          <tr>
+            <th><h2>곡 차트</h2></th>
+            <th>실시간 2016.06.30 12:00</th>
+            <th>더보기&nbsp;&gt; </th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>-</td><!-- db연결 -->
+            <!-- img요소를 쓴 이유는? 이미지를 숨기지만 css로 img 처리를 할 수 없다. display 조작때문에 -->
+            <td><a href="#"><img src="images/chart_img" alt="쿵(Knock)"/>쿵(Knock)</a></td>
+            <td><a href="#">Zion.T</a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>-</td><!-- db연결 -->
+            <!-- img요소를 쓴 이유는? 이미지를 숨기지만 css로 img 처리를 할 수 없다. display 조작때문에 -->
+            <td><a href="#"><img src="images/chart_img" alt="Machine Gun(feat.Mino)"/>Machine Gun</a></td>
+            <td><a href="#">KUSH</a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>-</td><!-- db연결 -->
+            <!-- img요소를 쓴 이유는? 이미지를 숨기지만 css로 img 처리를 할 수 없다. display 조작때문에 -->
+            <td><a href="#"><img src="images/chart_img" alt="Why"/>Why</a></td>
+            <td><a href="#">태연(TAEYEON)</a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>-</td><!-- db연결 -->
+            <!-- img요소를 쓴 이유는? 이미지를 숨기지만 css로 img 처리를 할 수 없다. display 조작때문에 -->
+            <td><a href="#"><img src="images/chart_img" alt="맘 편히"/>맘 편히(Comfortable)</a></td>
+            <td><a href="#">Simon D</a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>-</td><!-- db연결 -->
+            <!-- img요소를 쓴 이유는? 이미지를 숨기지만 css로 img 처리를 할 수 없다. display 조작때문에 -->
+            <td><a href="#"><img src="images/chart_img" alt="I like that"/>I like that</a></td>
+            <td><a href="#">씨스타(Sistar)</a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>-</td><!-- db연결 -->
+            <!-- img요소를 쓴 이유는? 이미지를 숨기지만 css로 img 처리를 할 수 없다. display 조작때문에 -->
+            <td><a href="#"><img src="images/chart_img" alt="뜨거운 안녕"/>뜨거운 안녕</a></td>
+            <td><a href="#">정인</a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>-</td><!-- db연결 -->
+            <!-- img요소를 쓴 이유는? 이미지를 숨기지만 css로 img 처리를 할 수 없다. display 조작때문에 -->
+            <td><a href="#"><img src="images/chart_img" alt="Bye bye my blue"/>Bye bye my blue</a></td>
+            <td><a href="#">백예린</a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>-</td><!-- db연결 -->
+            <!-- img요소를 쓴 이유는? 이미지를 숨기지만 css로 img 처리를 할 수 없다. display 조작때문에 -->
+            <td><a href="#"><img src="images/chart_img" alt="비행소년(Feat.거미)"/>비행소년(Feat.거미)</a></td>
+            <td><a href="#">매드 클라운</a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>-</td><!-- db연결 -->
+            <!-- img요소를 쓴 이유는? 이미지를 숨기지만 css로 img 처리를 할 수 없다. display 조작때문에 -->
+            <td><a href="#"><img src="images/chart_img" alt="Starlight(Feat.DEAN)"/>Starlight(Feat.DEAN)</a></td>
+            <td><a href="#">태연(TAEYEON)</a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>-</td><!-- db연결 -->
+            <!-- img요소를 쓴 이유는? 이미지를 숨기지만 css로 img 처리를 할 수 없다. display 조작때문에 -->
+            <td><a href="#"><img src="images/chart_img" alt="CHEER UP"/>CHEER UP</a></td>
+            <td><a href="#">TWICE</a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+            <td><a href="#"><button type="button" name="button"></button></a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="hidden menu">
+        <ul>
+          <li><a href="#라디오 듣기">라디오 듣기</a></li>
+          <li><a href="#공유하기">공유하기&nbsp;&gt;</a></li>
+          <li>
+            <div class="dept2_hidden_menu">
+              <ul>
+                <li><a href="#카카오">카카오스토리</a></li>
+                <li><a href="#페북">페이스북</a></li>
+                <li><a href="#트위터">트위터</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#좋아">좋아</a></li>
+        </ul>
+      </div><!-- hidden menu -->
+    </div><!-- chart -->
+
+    <!-- 인기 뮤직PD 앨범 -->
+    <div class="interest album">
+      <table border="1">
+        <caption>인기 뮤직PD 앨범</caption><!-- caption 숨기기 -->
+        <thead>
+          <tr>
+            <th><h2>인기 뮤직PD 앨범</h2></th>
+            <th>실시간 2016.06.30 12:00</th>
+            <th>더보기&nbsp;&gt; </th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 테이블 내용 1 -->
+          <tr>
+            <td>
+              <div class="album_cd">
+                <img src="images/funkmusic" alt="funkmusic" />
+                <button type="button" name="button"></button>
+              </div><!-- album_cd -->
+            </td>
+            <td>
+              <a href="#앨범소개">SPA 매장에서 이 음악에 반하다! Vol.4</a>
+              <a href="#가수프로필">funkmania</a>
+            </td>
+            <td>
+              <a href="#동글더보기"></a>
+            <!-- hidden menu -->
+              <div class="hidden menu">
+                <ul>
+                  <li><a href="#">재생목록에 추가</a></li>
+                  <li><a href="#">내 앨범에 담기</a></li>
+                  <li><a href="#">다운로드</a></li>
+                  <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                  <li>
+                    <div class="hidden menu">
+                      <ul>
+                        <li><a href="#카카오">카카오스토리</a></li>
+                        <li><a href="#페북">페이스북</a></li>
+                        <li><a href="#트위터">트위터</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">좋아</a></li>
+                </ul>
+              </div><!-- hidden menu -->
+            </td>
+          </tr>
+
+          <!-- 테이블 내용 2 -->
+          <tr>
+            <td>
+              <div class="album_cd">
+                <img src="images/funkmusic" alt="funkmusic" />
+                <button type="button" name="button"></button>
+              </div><!-- album_cd -->
+            </td>
+            <td>
+              <a href="#앨범소개">SPA 매장에서 이 음악에 반하다! Vol.4</a>
+              <a href="#가수프로필">funkmania</a>
+            </td>
+            <td>
+              <a href="#동글더보기"></a>
+            <!-- hidden menu -->
+              <div class="hidden menu">
+                <ul>
+                  <li><a href="#">재생목록에 추가</a></li>
+                  <li><a href="#">내 앨범에 담기</a></li>
+                  <li><a href="#">다운로드</a></li>
+                  <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                  <li>
+                    <div class="hidden menu">
+                      <ul>
+                        <li><a href="#카카오">카카오스토리</a></li>
+                        <li><a href="#페북">페이스북</a></li>
+                        <li><a href="#트위터">트위터</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">좋아</a></li>
+                </ul>
+              </div><!-- hidden menu -->
+            </td>
+          </tr>
+          <!-- 테이블 내용 3 -->
+          <tr>
+            <td>
+              <div class="album_cd">
+                <img src="images/funkmusic" alt="funkmusic" />
+                <button type="button" name="button"></button>
+              </div><!-- album_cd -->
+            </td>
+            <td>
+              <a href="#앨범소개">SPA 매장에서 이 음악에 반하다! Vol.4</a>
+              <a href="#가수프로필">funkmania</a>
+            </td>
+            <td>
+              <a href="#동글더보기"></a>
+            <!-- hidden menu -->
+              <div class="hidden menu">
+                <ul>
+                  <li><a href="#">재생목록에 추가</a></li>
+                  <li><a href="#">내 앨범에 담기</a></li>
+                  <li><a href="#">다운로드</a></li>
+                  <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                  <li>
+                    <div class="hidden menu">
+                      <ul>
+                        <li><a href="#카카오">카카오스토리</a></li>
+                        <li><a href="#페북">페이스북</a></li>
+                        <li><a href="#트위터">트위터</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">좋아</a></li>
+                </ul>
+              </div><!-- hidden menu -->
+            </td>
+          </tr>
+          <!-- 테이블 내용 4-->
+          <tr>
+            <td>
+              <div class="album_cd">
+                <img src="images/funkmusic" alt="funkmusic" />
+                <button type="button" name="button"></button>
+              </div><!-- album_cd -->
+            </td>
+            <td>
+              <a href="#앨범소개">SPA 매장에서 이 음악에 반하다! Vol.4</a>
+              <a href="#가수프로필">funkmania</a>
+            </td>
+            <td>
+              <a href="#동글더보기"></a>
+            <!-- hidden menu -->
+              <div class="hidden menu">
+                <ul>
+                  <li><a href="#">재생목록에 추가</a></li>
+                  <li><a href="#">내 앨범에 담기</a></li>
+                  <li><a href="#">다운로드</a></li>
+                  <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                  <li>
+                    <div class="hidden menu">
+                      <ul>
+                        <li><a href="#카카오">카카오스토리</a></li>
+                        <li><a href="#페북">페이스북</a></li>
+                        <li><a href="#트위터">트위터</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">좋아</a></li>
+                </ul>
+              </div><!-- hidden menu -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!-- interest album -->
+
+    <!-- 서비스 이용 버튼 -->
+    <div class="서비스 이용">
+      <div class="전체듣기">
+        <img src="images/" alt="">
+        <a href="#전체듣기">전체듣기</a>
+      </div>
+      <div class="전체 재생목록에 추가">
+        <img src="images/" alt="">
+        <a href="#전체 재생목록에 추가">전체 재생목록에 추가</a>
+      </div>
+      <div class="전체 다운로드">
+        <img src="images/" alt="">
+        <a href="#전체 다운로드">전체 다운로드</a>
+      </div>
+    </div><!-- 서비스 이용 버튼 -->
+
+    <!-- 뮤직비디오 -->
+    <div class="music_video_wrap">
+      <div class="mv_top">
+        <h2>뮤직비디오</h2>
+        <a href="#">더 보기 &gt;</a>
+      </div><!-- mv_top -->
+      <div class="mv_contents_wrap">
+        <!-- mv_1 -->
+        <div class="mv_contents">
+          <div class="mv_img">
+            <img src="images/몸만와_하비" alt="몸만와_하비" />
+            <span class="mv_runtime">03:22</span><!-- DB연결 -->
+          </div><!--mv_img-->
+          <img src="images/등급" alt="" />
+          <a href="#앨범소개">SYSTEM</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- mv_contents -->
+
+        <!-- mv_2 -->
+        <div class="mv_contents">
+          <div class="mv_img">
+            <img src="images/몸만와_하비" alt="몸만와_하비" />
+            <span class="mv_runtime">03:22</span><!-- DB연결 -->
+          </div><!--mv_img-->
+          <img src="images/등급" alt="" />
+          <a href="#앨범소개">SYSTEM</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- mv_contents -->
+
+        <!-- mv_3 -->
+        <div class="mv_contents">
+          <div class="mv_img">
+            <img src="images/몸만와_하비" alt="몸만와_하비" />
+            <span class="mv_runtime">03:22</span><!-- DB연결 -->
+          </div><!--mv_img-->
+          <img src="images/등급" alt="" />
+          <a href="#앨범소개">SYSTEM</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- mv_contents -->
+
+        <!-- mv_4 -->
+        <div class="mv_contents">
+          <div class="mv_img">
+            <img src="images/몸만와_하비" alt="몸만와_하비" />
+            <span class="mv_runtime">03:22</span><!-- DB연결 -->
+          </div><!--mv_img-->
+          <img src="images/등급" alt="" />
+          <a href="#앨범소개">SYSTEM</a>
+          <a href="#가수프로필">가수프로필</a>
+          <a href="#동글더보기"></a>
+          <!-- hidden menu -->
+            <div class="hidden menu">
+              <ul>
+                <li><a href="#">재생목록에 추가</a></li>
+                <li><a href="#">내 앨범에 담기</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+                <li>
+                  <div class="hidden menu">
+                    <ul>
+                      <li><a href="#카카오">카카오스토리</a></li>
+                      <li><a href="#페북">페이스북</a></li>
+                      <li><a href="#트위터">트위터</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">좋아</a></li>
+              </ul>
+            </div><!-- hidden menu -->
+        </div><!-- mv_contents -->
+      </div><!-- mv_contents_wrap -->
+    </div><!-- music_video_wrap -->
+
+    <!-- main_issue_wrap -->
+    <div class="main_issue_wrap">
+      <!-- main_issue 1 -->
+      <div class="main_issue">
+        <div class="issue_top">
+          <h2>요즘 음악계 이슈가 궁금하다면</h2>
+          <a href="#">더 보기 &gt;</a>
+        </div><!-- issue_top -->
+        <div class="issue_img">
+          <img src="images/마치킹스" alt="마치킹스" />
+        </div><!-- issue_img-->
+        <a href="#숨은 아티스트">숨은 아티스트</a>
+        <span>Free</span><!-- 인라인 블록? -->
+        <a href="#가수프로필">마치킹스(The March Kings) - 무기력한 세상에 선 청춘의 자화상</a>
+      </div><!--main_issue-->
+
+      <!-- main_issue 2 -->
+      <div class="main_issue">
+        <div class="issue_top">
+          <h2>요즘 음악계 이슈가 궁금하다면</h2>
+          <a href="#">더 보기 &gt;</a>
+        </div><!-- issue_top -->
+        <div class="issue_img">
+          <img src="images/마치킹스" alt="마치킹스" />
+        </div><!-- issue_img-->
+        <a href="#숨은 아티스트">숨은 아티스트</a>
+        <span>Free</span><!-- 인라인 블록? -->
+        <a href="#가수프로필">마치킹스(The March Kings) - 무기력한 세상에 선 청춘의 자화상</a>
+      </div><!--main_issue-->
+
+      <!-- main_issue 3 -->
+      <div class="main_issue">
+        <div class="issue_top">
+          <h2>요즘 음악계 이슈가 궁금하다면</h2>
+          <a href="#">더 보기 &gt;</a>
+        </div><!-- issue_top -->
+        <div class="issue_img">
+          <img src="images/마치킹스" alt="마치킹스" />
+        </div><!-- issue_img-->
+        <a href="#숨은 아티스트">숨은 아티스트</a>
+        <span>Free</span><!-- 인라인 블록? -->
+        <a href="#가수프로필">마치킹스(The March Kings) - 무기력한 세상에 선 청춘의 자화상</a>
+      </div><!--main_issue-->
+    </div><!-- main_issue_wrap -->
+
+    <!-- music recommend_wrap -->
+    <div class="main_recommend_wrap">
+      <!-- music recommendation 1-->
+      <div class="main_recommend">
+        <div class="recommend_top">
+          <div class="recommend_title">
+            <h2>나만을 위한 음악 추천, 뮤직 4U</h2>
+            <a href="#">?</a>
+          </div><!-- recommend title -->
+          <a href="#">더 보기 &gt;</a>
+        </div><!-- recommend_top -->
+        <div class="issue_img">
+          <img src="images/pd앨범" alt="pd앨범" />
+          <h3>음악 장인들이 추천하는 오늘 듣기 좋은 뮤직PD앨범</h3>
+          <a href="#">웃음 아이콘</a> <!-- 누르면 팝업 -->
+        </div><!-- issue_img-->
+        <a href="#">Day day</a>
+        <a href="#비오는날">비오는 날 듣기좋은 노래</a>
+      </div><!--main_recommend-->
+
+      <!-- music recommendation 2-->
+      <div class="main_recommend">
+        <div class="recommend_top">
+          <div class="recommend_title">
+            <h2>나만을 위한 음악 추천, 뮤직 4U</h2>
+            <a href="#">?</a>
+          </div><!-- recommend title -->
+          <a href="#">더 보기 &gt;</a>
+        </div><!-- recommend_top -->
+        <div class="issue_img">
+          <img src="images/pd앨범" alt="pd앨범" />
+          <h3>음악 장인들이 추천하는 오늘 듣기 좋은 뮤직PD앨범</h3>
+          <a href="#">웃음 아이콘</a> <!-- 누르면 팝업 -->
+        </div><!-- issue_img-->
+        <a href="#">Day day</a>
+        <a href="#비오는날">비오는 날 듣기좋은 노래</a>
+      </div><!--main_recommend-->
+
+      <!-- music recommendation 3-->
+      <div class="main_recommend">
+        <div class="recommend_top">
+          <div class="recommend_title">
+            <h2>나만을 위한 음악 추천, 뮤직 4U</h2>
+            <a href="#">?</a>
+          </div><!-- recommend title -->
+          <a href="#">더 보기 &gt;</a>
+        </div><!-- recommend_top -->
+        <div class="issue_img">
+          <img src="images/pd앨범" alt="pd앨범" />
+          <h3>음악 장인들이 추천하는 오늘 듣기 좋은 뮤직PD앨범</h3>
+          <a href="#">웃음 아이콘</a> <!-- 누르면 팝업 -->
+        </div><!-- issue_img-->
+        <a href="#">Day day</a>
+        <a href="#비오는날">비오는 날 듣기좋은 노래</a>
+      </div><!--main_recommend-->
+    </div><!-- music recommend_wrap -->
+
+    <!-- theme album -->
+    <div class="theme_wrap">
+      <div class="theme_top">
+        <h2>테마별로 즐기는 뮤직PD앨범</h2>
+        <a href="#">더 보기 &gt;</a>
+      </div><!-- theme_top -->
+      <!-- theme 1 -->
+      <div class="theme_cd">
+        <div class="theme_img">
+          <!-- EVENT 이미지 -->
+          <img src="images/저스틴비버" alt="저스틴비버" />
+          <button type="button" name="button"></button>
+        </div><!-- theme_img -->
+        <a href="#앨범소개">UK 신기록 달성! 저스틴 비버 인기곡</a>
+        <a href="#가수프로필">유니버셜 뮤직</a>
+        <button type="button" name="button"></button>
+        <!-- hidden menu -->
+          <div class="hidden menu">
+            <ul>
+              <li><a href="#">재생목록에 추가</a></li>
+              <li><a href="#">내 앨범에 담기</a></li>
+              <li><a href="#">다운로드</a></li>
+              <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+              <li>
+                <div class="hidden menu">
+                  <ul>
+                    <li><a href="#카카오">카카오스토리</a></li>
+                    <li><a href="#페북">페이스북</a></li>
+                    <li><a href="#트위터">트위터</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">좋아</a></li>
+            </ul>
+          </div><!-- hidden menu -->
+      </div><!-- theme_cd -->
+
+      <!-- theme 2 -->
+      <div class="theme_cd">
+        <div class="theme_img">
+          <!-- EVENT 이미지 -->
+          <img src="images/저스틴비버" alt="저스틴비버" />
+          <button type="button" name="button"></button>
+        </div><!-- theme_img -->
+        <a href="#앨범소개">UK 신기록 달성! 저스틴 비버 인기곡</a>
+        <a href="#가수프로필">유니버셜 뮤직</a>
+        <button type="button" name="button"></button>
+        <!-- hidden menu -->
+          <div class="hidden menu">
+            <ul>
+              <li><a href="#">재생목록에 추가</a></li>
+              <li><a href="#">내 앨범에 담기</a></li>
+              <li><a href="#">다운로드</a></li>
+              <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+              <li>
+                <div class="hidden menu">
+                  <ul>
+                    <li><a href="#카카오">카카오스토리</a></li>
+                    <li><a href="#페북">페이스북</a></li>
+                    <li><a href="#트위터">트위터</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">좋아</a></li>
+            </ul>
+          </div><!-- hidden menu -->
+      </div><!-- theme_cd -->
+
+      <!-- theme 3 -->
+      <div class="theme_cd">
+        <div class="theme_img">
+          <!-- EVENT 이미지 -->
+          <img src="images/저스틴비버" alt="저스틴비버" />
+          <button type="button" name="button"></button>
+        </div><!-- theme_img -->
+        <a href="#앨범소개">UK 신기록 달성! 저스틴 비버 인기곡</a>
+        <a href="#가수프로필">유니버셜 뮤직</a>
+        <button type="button" name="button"></button>
+        <!-- hidden menu -->
+          <div class="hidden menu">
+            <ul>
+              <li><a href="#">재생목록에 추가</a></li>
+              <li><a href="#">내 앨범에 담기</a></li>
+              <li><a href="#">다운로드</a></li>
+              <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+              <li>
+                <div class="hidden menu">
+                  <ul>
+                    <li><a href="#카카오">카카오스토리</a></li>
+                    <li><a href="#페북">페이스북</a></li>
+                    <li><a href="#트위터">트위터</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">좋아</a></li>
+            </ul>
+          </div><!-- hidden menu -->
+      </div><!-- theme_cd -->
+
+      <!-- theme 4 -->
+      <div class="theme_cd">
+        <div class="theme_img">
+          <!-- EVENT 이미지 -->
+          <img src="images/저스틴비버" alt="저스틴비버" />
+          <button type="button" name="button"></button>
+        </div><!-- theme_img -->
+        <a href="#앨범소개">UK 신기록 달성! 저스틴 비버 인기곡</a>
+        <a href="#가수프로필">유니버셜 뮤직</a>
+        <button type="button" name="button"></button>
+        <!-- hidden menu -->
+          <div class="hidden menu">
+            <ul>
+              <li><a href="#">재생목록에 추가</a></li>
+              <li><a href="#">내 앨범에 담기</a></li>
+              <li><a href="#">다운로드</a></li>
+              <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+              <li>
+                <div class="hidden menu">
+                  <ul>
+                    <li><a href="#카카오">카카오스토리</a></li>
+                    <li><a href="#페북">페이스북</a></li>
+                    <li><a href="#트위터">트위터</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">좋아</a></li>
+            </ul>
+          </div><!-- hidden menu -->
+      </div><!-- theme_cd -->
+
+      <!-- theme 5 -->
+      <div class="theme_cd">
+        <div class="theme_img">
+          <!-- EVENT 이미지 -->
+          <img src="images/저스틴비버" alt="저스틴비버" />
+          <button type="button" name="button"></button>
+        </div><!-- theme_img -->
+        <a href="#앨범소개">UK 신기록 달성! 저스틴 비버 인기곡</a>
+        <a href="#가수프로필">유니버셜 뮤직</a>
+        <button type="button" name="button"></button>
+        <!-- hidden menu -->
+          <div class="hidden menu">
+            <ul>
+              <li><a href="#">재생목록에 추가</a></li>
+              <li><a href="#">내 앨범에 담기</a></li>
+              <li><a href="#">다운로드</a></li>
+              <li><a href="#">공유하기</a></li><!-- 화살표는 누르는게 아니니 요소x -->
+              <li>
+                <div class="hidden menu">
+                  <ul>
+                    <li><a href="#카카오">카카오스토리</a></li>
+                    <li><a href="#페북">페이스북</a></li>
+                    <li><a href="#트위터">트위터</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">좋아</a></li>
+            </ul>
+          </div><!-- hidden menu -->
+      </div><!-- theme_cd -->
+
+      <div class="theme_mini">
+        <div class="theme_mini_1">
+          <a href="">도심속 나이트 드라이브 감성뮤직</a>
+          <img src="images/감성뮤직" alt="" />
+        </div>
+        <div class="theme_mini_2">
+          <a href="">pd추천 정통 클래식 음악</a>
+          <img src="images/클래식음악" alt="" />
+        </div>
+        <div class="theme_mini_3">
+          <a href="">비오는 날 듣기좋은 노래</a>
+          <img src="images/감성뮤직" alt="" />
+        </div>
+      </div><!-- theme_mini -->
+    </div><!-- theme_wrap -->
+
+    <!-- expert choice -->
+    <div class="expert_wrap">
+        <!-- expert 1 -->
+      <div class="expert_top">
+        <h2>전문가 선정! 꼭 들어야 할 명반</h2>
+        <a href="#">더 보기 &gt;</a>
+      </div><!-- expert_top -->
+      <!-- expert 1 -->
+      <div class="expert_img">
+        <img src="images/비틀즈" alt="비틀즈" />
+        <a href="#">롤링스톤 선정 역대 베스트 앨범 TOP40</a>
+      </div><!-- expert_img-->
+
+        <!-- expert 2 -->
+      <div class="expert_top">
+        <h2>전문가 선정! 꼭 들어야 할 명반</h2>
+        <a href="#">더 보기 &gt;</a>
+      </div><!-- expert_top -->
+      <!-- expert 1 -->
+      <div class="expert_img">
+        <img src="images/비틀즈" alt="비틀즈" />
+        <a href="#">롤링스톤 선정 역대 베스트 앨범 TOP40</a>
+      </div><!-- expert_img-->
+
+      <!-- expert 3 -->
+      <div class="expert_top">
+        <h2>전문가 선정! 꼭 들어야 할 명반</h2>
+        <a href="#">더 보기 &gt;</a>
+      </div><!-- expert_top -->
+      <!-- expert 1 -->
+      <div class="expert_img">
+        <img src="images/비틀즈" alt="비틀즈" />
+        <a href="#">롤링스톤 선정 역대 베스트 앨범 TOP40</a>
+      </div><!-- expert_img-->
+    </div><!--expert_wrap-->
+
+    <!-- cooperate with -->
+    <div class="cooperate_wrap">
+      <div class="cooperate_top">
+        <h2>세계 최고의 음반사들을 벅스에서 만나다!</h2>
+        <a href="#">더 보기 &gt;</a>
+      </div><!-- cooperate_top -->
+      <div class="cooperate_img">
+        <a href="#">hanssler</a>
+        <a href="#">cedille</a>
+        <a href="#">paladino music</a>
+      </div>
+    </div><!-- cooperate_wrap-->
+
+    <div class="notice">
+      <div class="notice_top">
+        <h3><a href="#">공지사항</a></h3>
+        <a href="#">[공지]'니나노 클럽'이용 안내</a>
+        <span>2016.01.08</span>
+      </div><!--notice_top-->
+      <ul class="noticebar_menu">
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">벅스패널</a></li>
+        <li><a href="#">Android</a></li>
+        <li><a href="#">IOS</a></li>
+        <li><a href="#">벅스플레이어4</a></li>
+        <li><a href="#">버즈런처</a></li>
+      </ul>
+    </div><!--notice-->
+  </main>
+  <footer>
+    <div class="footer_nav">
+      <ul>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">제휴문의</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">청소년보호정책</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">사이트맵</a></li>
+      </ul>
+    </div><!--footer_nav-->
+    <div class="footer_sns">
+      <a href="#blog"></a>
+      <a href="#facebook"></a>
+      <a href="#kakao"></a>
+      <select class="family_site" name="family_site">
+        <option value="familysite">FAMILY SITE</option>
+        <option value="NHN">NHN</option>
+        <option value="세이클럽">세이클럽</option>
+      </select>
+    </div><!--footer_sns-->
+    <!-- address -->
+    <div class="address">
+      <!-- address ?! -->
+        <p>㈜벅스 | 13487 경기도 성남시 분당구 대왕판교로 645번길 16 플레이뮤지엄 | 대표이사 : 양주일 | 고객센터 : help@help.bugs.co.kr / 1566-4882 (유료)</p>
+        <p>사업자등록번호 : 211-87-15555 | 통신판매업 신고번호 : 제 2013-경기성남-0532호 | 사업자정보 확인 | © BUGS Corp. All rights reserved.</p>
+    </div><!--location vcard-->
+
+    <!-- prize -->
+    <div class="prize">
+      <a href="#"><img src="images/" alt=""></a>
+      <a href="#"><img src="images/" alt=""></a>
+      <a href="#"><img src="images/" alt=""></a>
+      <a href="#"><img src="images/" alt=""></a>
+      <a href="#"><img src="images/" alt=""></a>
+      <a href="#"><img src="images/" alt=""></a>
+    </div>
+  </footer>
+
+  <!-- Top 버튼 -->
+  <a href="#top">Top</a>
+</body>
+</html>
