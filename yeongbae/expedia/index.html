@@ -15,6 +15,7 @@
   <!-- 네이트 사이트에서 description만 있는데. 실제 코드는 존재하고 로봇이 해석하는거 아닌가? -->
   <meta name="keywords" content="호텔, 호텔 예약, 호텔 할인, 호텔 예약 사이트, 국내 호텔, 해외 호텔, 호텔 패키지, 저렴한 호텔, 항공권, 항공권 예약, 항공권 할인, 익스피디아">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
   <!-- Favicon: Favorite Icon -->
   <link rel="shortcut icon" href="images/expedia-favicon.png">
 </head>
@@ -22,46 +23,82 @@
   <!-- before: 오전에 header , nav 까지 작업 -->
   <!-- after : 나머지 작업 / 리팩토링 토론: 주석표기 , 의미구조화 신경씀, 접근성 신경, 유효성 -->
   <!-- wrap 크게 의미 없지 않을까? -->
-  <div class="wrap">
+  <!-- <div class="wrap"> -->
     <!-- header navigation -->
     <header>
+      <div class="wrap">
       <!-- alt가 있는데 h1의 글씨만 넣지 않는다 -->
-      <h1>Expedia
-        <a href="https://www.expedia.co.kr/"><img src="./images/logo.png" alt="expedia logo" /></a>
-      </h1>
-      <div class="nav">
-        <ul>
-          <!-- 넣기-->
-          <li>홈</li>
-          <li>항공</li>
-          <li>호텔</li>
-          <li>특가상품</li>
-          <li>렌트카</li>
-          <li>쿠폰</li>
-        </ul>
-        <ul>
-          <li>
-            <select name="language">
-                <option value="english">english</option>
-                <option value="korean">korean</option>
-                <option value="chinese">chinese</option>
-                <option value="Japanese">Japanese</option>
-                <option value="German">German</option>
-                <option value="French">French</option>
-            </select>
-          </li>
-          <li>
-            <select name="customer_service_center">
-                <option value="고객센터">고객센터</option>
-                <option value="faq">FAQ</option>
-            </select>
-          </li>
-          <li>
-            <a href="login.html">로그인</a>
-            <span><img src="./images/nation.png" alt="nation" /></span>
-          </li>
-        </ul>
-      </div>
+        <h1>
+          <a href="https://www.expedia.co.kr/"><img src="./images/logo.png" alt="expedia logo" /></a>
+        </h1>
+        <div class="nav">
+          <ul>
+            <!-- div ? -->
+            <li><a href="#">홈</a></li>
+            <li><a href="#">항공</a></li>
+            <li><a href="#">호텔</a></li>
+            <li><a href="#">특가상품</a></li>
+            <li><a href="#">렌트카</a></li>
+            <li><a href="#">쿠폰</a></li>
+          </ul>
+          <ul>
+            <li>
+              <!-- <select name="language">
+                  <option value="english">english</option>
+                  <option value="korean">korean</option>
+                  <option value="chinese">chinese</option>
+                  <option value="Japanese">Japanese</option>
+                  <option value="German">German</option>
+                  <option value="French">French</option>
+              </select> -->
+              <!-- css 적용 어려울 시에 대체코드 -->
+              <button class="" value="korean" onclick="">korean
+                <span class="select_btn"></span>
+              </button>
+            </li>
+            <!-- hidden nation button -->
+            <ul class="hidden button">
+              <li>
+                <button name="button" class="" value="chinese">chinese
+                  <span class="select_btn"></span>
+                </button>
+              </li>
+              <li>
+                <button name="button" class="" value="japanese">japanese
+                  <span class="select_btn"></span>
+                </button>
+              </li>
+              <li>
+                <button name="button" class="" value="french">french
+                  <span class="select_btn"></span>
+                </button>
+              </li>
+              <li>
+                <button name="button" class="" value="English">English
+                  <span class="select_btn"></span>
+                </button>
+              </li>
+            </ul>
+
+              <li>
+              <!-- <select name="customer_service_center">
+                  <option value="고객센터">고객센터</option>
+                  <option value="faq">FAQ</option>
+              </select> -->
+                  <button class="" value="고객센터" onclick="">고객센터
+                    <span class="select_btn"></span>
+                  </button>
+                  <button class="" value="FAQ" onclick="">FAQ
+                    <span class="select_btn"></span>
+                  </button>
+               </li>
+            <li>
+              <a href="login.html" class="login">로그인</a>
+              <span><img src="./images/nation.png" alt="nation" /></span>
+            </li>
+          </ul>
+        </div>
+      </div><!-- wrap -->
     </header>
 
     <main>
@@ -69,8 +106,9 @@
       <!-- flight search -->
       <section class="main_flight">
         <div class="main_flight_des">
-          <!-- h2로 적자 section -->
-          <p>간편한 예약으로 특별한 여행을 시작하세요</p>
+          <!-- 이전 코드 -->
+          <!-- <p>간편한 예약으로 특별한 여행을 시작하세요</p> -->
+          <h2>간편한 예약으로 특별한 여행을 시작하세요</h2>
         </div>
         <img src="./images/main.png" alt="항공편 검색" />
           <div class="flight_search">
@@ -248,6 +286,6 @@
         </section>
       </div><!--container-->
     </footer>
-  </div><!--wrap-->
+
 </body>
 </html>
