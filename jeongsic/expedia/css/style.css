@@ -1,0 +1,31 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin:0 auto;
+}
+
+header a {
+	color: #09428B;
+	text-decoration: none;
+}
+
+.gnb {
+	list-style-type: none;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.gnb li {
+	float: left;
+}
+
+.unb {
+	font-size: 1.03em;
+	float: left;
+}
