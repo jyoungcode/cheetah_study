@@ -1,0 +1,78 @@
+.pages_wrap{
+	position: relative;
+	width: 459px;
+	height: 35px;
+	margin-right: auto;
+	margin-left: auto;
+}
+[class*="btn_page"] a{
+	display: block;
+	width: 35px;
+	height: 35px;
+	border-radius: 2px;
+	line-height: 35px;
+	text-align: center;
+		color:#676867;
+}
+.btn_pageChange a{
+	position: absolute;
+	border: 1px solid #9b9c9b;
+	text-indent:-9999px;
+}
+.btn_previous{
+	top: 0;
+	left: 0;
+	background: url("../img/arrow_to_left.png") no-repeat;
+	background-position: center center;
+}
+.btn_next{
+	top:0;
+	right:0;
+	background: url("../img/arrow_to_right.png") no-repeat;
+	background-position: center center;
+}
+.paging{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 329px;
+	transform: translateX(-50%);
+}
+.btn_page_list li{
+	float: left;
+	margin-right: 7px;
+}
+.btn_page_list li:last-child{
+	margin-right: 0px;
+}
+
+.btn_page_list .active{
+	color:white;
+	background: #00a651;
+}
+.btn_page_list a:hover:not(.active){
+	color:white;
+	background:#9b9c9b;
+}
+
+
+/*
+ common.css
+*/
+*{box-sizing: border-box;}
+ol{
+	 margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style:none;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+
+.clearfix::after{
+	content:'';
+	display: block;
+	clear:both;
+}
