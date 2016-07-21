@@ -1,0 +1,60 @@
+/* 모달이 나타날 때 동적으로 생성될 dim-layer */
+.is-modal::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+}
+ 
+/* 모달 기본 모듈 */
+.modal {
+  box-sizing: border-box;
+  width: 530px;
+  min-height: 360px;
+  border-radius: 2px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  padding: 24px 30px;
+}
+
+/* 모달 폼 그룹 */
+.modal.modal_form {
+  background: #f2f2f2;
+  border-top: 4px solid green;
+  border-bottom: 4px solid green;
+}
+
+
+.modal .heading_group {
+  margin-bottom: 21px;
+}
+
+.modal label {
+  width: 25%;
+  float: left;
+  line-height: 48px;
+  font-weight: bolder;
+}
+.modal .input_default {
+  width: 75%;
+  margin-bottom: 24px;
+  background: #fff;
+}
+
+.modal form {
+  border-top: 1px solid #232323;
+  padding-top: 21px;
+}
+
+.modal_footer {
+  margin-top: 24px;
+  border-top: 1px solid #232323;
+  padding-top: 10px;
+}
