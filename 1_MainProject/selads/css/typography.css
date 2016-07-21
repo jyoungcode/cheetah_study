@@ -1,4 +1,4 @@
-@charset "utf-8";
+  @charset "utf-8";
 
 body {
   font-size: 16px;
@@ -62,7 +62,7 @@ h6 {
 /* 네비게이션 */
 .heading_group .heading_pageNavigation {
   position: absolute;
-  top: 38px;
+  top: 36px; /* 24+ 12 px baseline 간격 */
   right: 0;
 }
 .heading_group .heading_pageNavigation li {
@@ -93,7 +93,7 @@ h6 {
   display: block;
   background: url("../../Resources/ionicons/fonts/home.svg");
   -webkit-background-size: cover;
-    background-size: cover;  
+    background-size: cover;
   position: absolute;
   top:2px;
   left: -20px;
