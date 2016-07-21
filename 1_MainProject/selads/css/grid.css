@@ -17,14 +17,14 @@
 	background-size:  1px 24px, 80px 1px;
 }
 
-.grid,
+.grid::after,
 .clearfix::after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-.grid [class*="push_"], .grid [class*="pull_"] {
+[class*="push_"], [class*="pull_"] {
 	position: relative;
 }
 [class*="unit_"] {
@@ -32,6 +32,13 @@
 	margin-left: 10px;
 	margin-right: 10px;
 }
+
+/*[class*="unit_"] [class*="unit_"]:first-child{
+	margin-left: 0px;
+}
+[class*="unit_"] [class*="unit_"]:last-child{
+	margin-right: 0px;
+}*/
 
 /* 12 column */
 .unit_1 {width: 60px;}
