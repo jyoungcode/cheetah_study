@@ -1,10 +1,8 @@
+@charset "utf-8";
 /*! common.css © yamoo9.net, 2016 */
 
 /* 목록 초기화 재사용 가능한 스타일 모듈 */
-.reset-list ul,
-.reset-list ol,
-ul.reset-list,
-ol.reset-list {
+ul, ol{
   margin-top:    0;
   margin-bottom: 0;
   padding-left:  0;
@@ -185,6 +183,15 @@ body { background-color: #f2f2f2;}
   position: absolute;
   top: 18px;
   left: -18px;
+}
+
+.order_label > h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  display: inline;
+  line-height: 0;
+  font-weight: 600;
 }
 
 .order_label::after {
