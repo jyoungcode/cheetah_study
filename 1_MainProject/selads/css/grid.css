@@ -33,12 +33,12 @@
 	margin-right: 10px;
 }
 
-[class*="unit_"] [class*="unit_"]:first-child{
+/*[class*="unit_"] [class*="unit_"]:first-child{
 	margin-left: 0px;
 }
 [class*="unit_"] [class*="unit_"]:last-child{
 	margin-right: 0px;
-}
+}*/
 
 /* 12 column */
 .unit_1 {width: 60px;}
@@ -105,7 +105,7 @@
 .suffix_11 {padding-right: 890px;}
 
 
-.no-gutter {
-	margin-right: 0;
+.no_gutter {
 	margin-left: 0;
+	margin-right: 0;
 }
