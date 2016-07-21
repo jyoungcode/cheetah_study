@@ -3,25 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <title>Buttons</title>
+  <link rel="stylesheet" href="../Resources/webfonts/SpoqaHanSans-kr.css">  
   <link rel="stylesheet" href="../Resources/initialization/ress.min.css">
   <link rel="stylesheet" href="../Resources/common.css">
+  <link rel="stylesheet" href="../selads/css/grid.css">
   <style>
+    body {
+      font-family: "Spoqa Han Sans";
+    }
     a[class*="btn-"] {
-      width: 240px;
+      display: block;
       height: 48px;
       line-height: 48px;
+      text-align: center;
+      border-radius: 2px;
+      border:1px solid #fff;
+      font-size: 14px;
+    }
+    a.btn-primary  {background: #00a651; border-color:#009b4c; color: #fff;}
+    a.btn-default  {background: #f6f9f3; border-color:#dedede; color: #232323;}
+    a.btn-plain    {background: #fff;    border-color:#dedede; color: #232323;}
+
+    a.btn-primary:hover  {background: #009b4c;}
+    a.btn-default:hover  {background: #f2f6ef;}
+    a.btn-plain:hover    {background: #f9f9f9;}
+
+    a.btn-primary:active  {background: #008240;}
+    a.btn-default:active  {background: #e4e9e1;}
+    a.btn-plain:active    {background: #f3f3f3;}
+
+    [class*="btn-"].btn-large {
+      height: 72px;
+      line-height: 72px;
     }
 
-    .btn-primary  {background: #000;}
-    .btn-default  {}
-    .btn-plain    {}
+
 
   </style>
 </head>
 <body>
   <h1>Buttons</h1>
-  <a class="btn-default"  href="">default</a>
-  <a class="btn-primary"  href="">primary</a>
-  <a class="btn-plain"    href="">plain</a>
+  버튼 너비의 제어는 그리드 시스템을 이용하세 처리하세요.
+  <div class="clearfix">
+    <a class="btn-default unit_1"  href="">확인</a>
+    <a class="btn-primary unit_1"  href="">추가</a>
+    <a class="btn-plain unit_1"    href="">취소</a>
+  
+  </div>
+  <a class="btn-default btn-large"  href="">확인</a>
+  <a class="btn-primary btn-large"  href="">추가</a>
+  <a class="btn-plain btn-large"    href="">취소</a>
 </body>
 </html>
