@@ -32,3 +32,16 @@ a.btn-plain:active    {background: #f3f3f3;}
   height: 72px;
   line-height: 72px;
 }
+
+/* 버튼 위치 고정 */
+/* 그리드 시스템으로 버튼 위치를 다루기 어려울 때 아래의 클래스를 사용합니다. */
+.btn-left {
+  float: left;
+}
+.btn-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+.btn-right {
+  float: right;
+}
