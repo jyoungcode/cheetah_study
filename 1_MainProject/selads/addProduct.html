@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/SpoqaHanSans-kr.css">
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="css/addProduct.css">
+  <link rel="stylesheet" href="../Resources/ionicons/ionicons.min.css">
 <!--   <link rel="shortcut icon" href="images/favicon_selards.png"> -->
 </head>
 <body>
@@ -54,18 +56,26 @@
       </div><!-- heading_group -->
 
       <!-- product_sheet -->
-      <div class="form_product">
-        <div class="head_product">
-          <button class="btn_toggle_product">
+      <div class="entire_form_product unit_7">
+        <div class="head_product clearfix">
+            <div class="toggle_wrap">
+            <button class="btn_toggle_product ion-arrow-down-b"></button>
             <span>상품1</span>
             <span>( 1/5 )</span>
-          </button>
+            </div><!-- toggle_wrap-->
+            <button class="btn_del unit_1">삭제</button>
         </div><!-- head_product -->
 
-        <div class="info_product">
-            <div class="title_product">
-              
-            </div>
+        <div class="product_info clearfix">
+            <div class="product_title clearfix unit_3">
+              <div>품명</div>
+              <input type="text" class="unit_3" />
+            </div><!--product_title-->
+
+            <div class="product_barCode clearfix unit_3">
+              <div>바코드</div>
+              <input type="text" class="unit_3" />
+            </div><!--product_barCode-->
         </div><!-- info_product -->
 
       </div><!-- form_product -->
