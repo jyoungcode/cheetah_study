@@ -1,23 +1,24 @@
+@charset "utf-8";
 
-/* 버튼 기본 모듈 */
+/* 기본 버튼 모듈 */
 a[class*="btn-"] {
   display: block;
   height: 48px;
   line-height: 48px;
   text-align: center;
   border-radius: 2px;
-  border:1px solid #fff;
+   border:1px solid transparent; 
   font-size: 14px;
 }
 
-/* 주요 버튼 */
+/* 중요 버튼 */
 a.btn-primary  {background: #00a651; border-color:#009b4c; color: #fff;}
-/* 기본 버튼 */
+/* 주요 버튼 */
 a.btn-default  {background: #f6f9f3; border-color:#dedede; color: #232323;}
-/* 깨끗한 버튼 */
+/* 기본 버튼 */
 a.btn-plain    {background: #fff;    border-color:#dedede; color: #232323;}
 
-/* 각 버튼의 상태 디자인 모듈 */
+/* 버튼 상태 디자인 모듈 */
 a.btn-primary:hover  {background: #009b4c;}
 a.btn-default:hover  {background: #f2f6ef;}
 a.btn-plain:hover    {background: #f9f9f9;}
@@ -26,15 +27,15 @@ a.btn-primary:active  {background: #008240;}
 a.btn-default:active  {background: #e4e9e1;}
 a.btn-plain:active    {background: #f3f3f3;}
 
-/* 버튼의 사이즈 모듈 */
-/* large 모듈은 높이가 2배가 됩니다.*/
+/* 버튼 크기 모듈 */
+/* btn-large 클래스를 사용하면 높이가 기본의 2배인 버튼이 됩니다. */
 [class*="btn-"].btn-large {
   height: 72px;
   line-height: 72px;
 }
 
-/* 버튼 위치 고정 */
-/* 그리드 시스템으로 버튼 위치를 다루기 어려울 때 아래의 클래스를 사용합니다. */
+/* 버튼 위치 클래스 모듈 */
+/* 버튼의 위치가 그리드 디자인으로 처리하기 어려운 경우, 버튼 위치 클래스를 이용하여 처리할 수 있습니다.. */
 .btn-left {
   float: left;
 }
@@ -43,5 +44,48 @@ a.btn-plain:active    {background: #f3f3f3;}
   margin-left: auto;
 }
 .btn-right {
-  float: right;
+  float: right !important;
+}
+
+/* BTN-ID 부분 */
+a.btn_id {
+    display: block;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 2px;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    background: #ff8b8b;
+    color: #fff;
+    text-decoration: none;
+}
+/* BTN-ID hover 부분 */
+a.btn_id:hover {
+    border-radius: 2px;
+    box-shadow: 0 0 5px #b8b7b7;
+    background: #ff7878;
+    transition: 0.3s;
+}
+/* BTN-PASSWORD 부분 */
+a.link_pw {
+    display: block;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 2px;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    background: #ff8b8b;
+    color: #fff;
+    text-decoration: none;
+}
+/* BTN-PASSWORD hover 부분 */
+a.link_pw:hover {
+    border-radius: 2px;
+    box-shadow: 0 0 5px #b8b7b7;
+    background: #ff7878;
+    transition: 0.5s;
 }
