@@ -16,7 +16,6 @@
 				linear-gradient(to right, transparent 10px, hsla(92, 81%, 64%, 0.2) 10px, hsla(92, 81%, 64%, 0.2) 70px,transparent 70px);
 	background-size:  1px 24px, 80px 1px;
 }
-
 .grid,
 .clearfix::after {
 	content: "";
