@@ -108,3 +108,11 @@
 .order_customerText {
   margin-bottom: 48px;
 }
+
+/* 모달 창닫기 버튼 */
+.btn_closeModal {
+  position: absolute;
+  top: 24px;
+  right: 60px;
+  cursor: pointer;
+}

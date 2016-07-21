@@ -1,13 +1,11 @@
-html {
+html, body {
   min-height: 100%;
 }
 
 body {
-  background: url("../images/index_background.png");
-  background-size: auto 100%;
-  background-position: center;
+
   height: 100%;
-  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
 }
 
 ul {
@@ -27,6 +25,9 @@ section {
 }
 
 .selads_index {
+  background: url("../images/index_background.png");
+  background-size: auto 100%;
+  background-position: center;
   position: relative;
   color: #fff;
 }
@@ -107,4 +108,41 @@ section {
 
 .selads_index address {
   color: #747474;
+}
+
+
+
+.selads_intro {
+  text-align: center;
+  color: #fff;
+  height: 100%;
+}
+.selads_introDescription {
+  margin-top: 42px;
+}
+
+.selads_process {
+  text-align: center;
+  color: #fff;
+  height: 100%;
+}
+
+
+.selads_process .process_steps {
+  text-align: center;
+  margin-top:42px;
+  margin-bottom: 72px;
+}
+.selads_process .process_steps li {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
+  border-radius: 80px;
+  border:4px solid #fff;
+  margin-right: 20px;
+}
+
+.selads_process .process_steps li:last-child {
+  margin-right: 0px;
 }
