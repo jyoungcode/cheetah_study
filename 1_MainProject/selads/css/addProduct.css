@@ -1,1 +1,34 @@
 @charset "utf-8";
+
+div.entire_form_product {
+	height: 408px;
+	margin-top: 1.5rem;
+	border: 1px solid #e6e6e6;
+}
+.toggle_wrap {
+	float: left;
+}
+.head_product {
+	background-color: #f2f2f2;
+}
+
+.btn_toggle_product {
+	
+}
+.btn_del {
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+	padding: 
+}
+
+.product_info { 
+	/*background-color: yellow;*/
+	margin-top: 1.5rem;
+
+ }
+.product_title {
+	background-color: yellow;
+}
+.product_barCode {
+	background-color: green;
+}
