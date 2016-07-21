@@ -1,0 +1,136 @@
+input {
+  height: 48px;
+  padding-left: 20px;
+  border: 2px solid #e4e4e4;
+  font-size: 14px;
+  line-height: 48px;
+  box-sizing: border-box;
+}
+
+.input_default {
+  width: 380px;
+}
+
+.input_group {
+  width: 114px;
+}
+
+span.input_group_line {
+  padding-left: 0px;
+  font-size: 19px;
+  font-weight: 900;
+  color: #e4e4e4;
+}
+
+.input_default_long {
+  width: 620px;
+}
+
+.dropbtn {
+  width: 220px;
+  height: 48px;
+  padding-left: 20px;
+  line-height: 48px;
+  background-color: transparent;
+  color: #232323;
+  font-size: 14px;
+  border: 2px solid #e4e4e4;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn::after {
+  position: absolute;
+  right: 17px;
+  top: 19px;
+  display: block;
+  content: '';
+  background: url("../img/btn_dropdown.png");
+  width: 20px;
+  height: 12px;
+}
+
+.dropdown-content {
+  width: 220px;
+  height: 140px;
+  border: 2px solid #e4e4e4;
+  display: none;
+  position: absolute;
+  background-color: transparent;
+}
+
+.dropdown-content a {
+  line-height: 48px;
+  font-size: 14px;
+  color: #868686;
+  padding-left: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:active .dropbtn{
+  margin-bottom: 5px;
+  box-shadow: 0px 5px 5px #f8f8f8
+}
+.dropdown:active .dropdown-content {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input_success_container,
+.input_failed_container {
+  position: relative;
+  width: 380px;
+  height: 48px;
+}
+
+.input_success,
+.input_failed {
+  width: 380px;
+}
+
+.input_valid_success,
+.input_valid_failed {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  width: 36px;
+  height: 36px;
+  background: #e6f9e5;
+  border-radius: 20px;
+}
+.input_valid_success::after {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  display: block;
+  content: '';
+  background: url("../img/valid_success.png");
+  width: 20px;
+  height: 12px;
+}
+
+.input_valid_failed {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: #ffe9e9;
+  border-radius: 20px;
+}
+.input_valid_failed::after {
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  display: block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: url("../img/valid_failed.png");
+}
