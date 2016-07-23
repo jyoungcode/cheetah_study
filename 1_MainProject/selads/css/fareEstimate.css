@@ -46,6 +46,7 @@
 	font-size: 16px; 
 	float: right;
 	line-height: 48px;
+	font-weight: 700;
 	height: 48px;
 }
 
@@ -53,6 +54,7 @@
 	font-size: 40px;
 	height: 48px;
 	line-height: 48px;
+	font-weight: 200;
 	float: right;
 }
 
