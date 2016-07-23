@@ -170,6 +170,12 @@ left: 50%; */
   color: #747474;
 }
 
+.member_container a.btn_default {
+  background: #e6f9e5;
+  border-color: #a3dd9f;
+  color: #87bf84;
+}
+
 .admit_container label {
   display: inline-block;
   width: 180px;
@@ -195,10 +201,10 @@ left: 50%; */
   opacity: 0.3;
 }
 
-input[type=checkbox] {
+.admit_container input[type=checkbox] {
   visibility: hidden;
 }
-input[type=checkbox]:checked + label:after {
+.admit_container input[type=checkbox]:checked + label:after {
   opacity: 1;
 }
 
