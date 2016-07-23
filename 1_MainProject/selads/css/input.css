@@ -52,7 +52,7 @@ span.input_group_line {
   top: 19px;
   display: block;
   content: '';
-  background: url("../images/btn_dropdown.png");
+  background: url("../images/");
   width: 20px;
   height: 12px;
 }
@@ -63,7 +63,7 @@ span.input_group_line {
   border: 2px solid #e4e4e4;
   display: none;
   position: absolute;
-  background-color: transparent;
+  background: #fff;
 }
 
 .dropdown-content a {
@@ -78,7 +78,6 @@ span.input_group_line {
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:active .dropbtn{
-  margin-bottom: 5px;
   box-shadow: 0px 5px 5px #f8f8f8
 }
 .dropdown:active .dropdown-content {
