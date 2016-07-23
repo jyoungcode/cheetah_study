@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="../Resources/webfonts/SpoqaHanSans-kr.css">
   <link rel="stylesheet" href="../Resources/initialization/ress.min.css">
-  <link rel="stylesheet" href="../Resources/common.css">
+  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/main.css">
@@ -13,54 +13,66 @@
   <title>Main</title>
 </head>
 <body>
-  <section class="selads_index">
+  <section id="selads_index" class="selads_index">
     <div class="container">
       <div class="selads_nav">
         <ul>
           <li>
-            <a href="#">
+            <a href="#selads_index">
               <div></div>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#selads_intro">
               <div></div>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#selads_footer_section">
               <div></div>
             </a>
           </li>
         </ul>
       </div>
       <div class="selads_about_container">
-        <a href="#" class="selads_about">
+        <a href="#selads_intro" class="selads_about">
           <span>SELADS</span>를 알고 싶어요
         </a>
       </div>
 
-      <h1>
-        <img src="images/selads_png_logo.png" alt="SELADS LOGO">
-      </h1>
+      <div class="title_group_container">
+        <h1 class="selads_index_logo">
+          <img src="images/selads_png_logo.png" alt="SELADS LOGO">
+        </h1>
+        
+        <p class="selads_headcopy"><span>온라인 셀러</span>들을 위한 <span>맞춤형 물류</span> 서비스</p>
+      </div>
+      
 
-      <p class="selads_headcopy"><span>온라인 셀러</span>들을 위한 <span>맞춤형 물류</span> 서비스</p>
-
-      <form action="#">
-        <input class="input_default" type="text" placeholder="아이디 또는 이메일">
-        <input class="input_default" type="password" placeholder="비밀번호">
-      </form>
-
-      <input type="checkbox">
-      <span>아이디 저장</span>
-
-      <a href="#">아이디 찾기</a>
-      <span>/</span>
-      <a href="#">비밀번호</a>
+      <div class="member_container">
+        <form action="#">
+          <input class="input_default" type="text" placeholder="아이디 또는 이메일" title="아이디 또는 이메일">
+          <input class="input_default" type="password" placeholder="비밀번호" title="아이디 또는 이메일">
+          <button class="btn-primary unit_2" type="submit">로그인</button>
+        </form>
+        
+        <a class="btn-default unit_3 btn-right" href="#">회원가입/이메일 가입으로 주문시작</a>
+        
+        <div class="admit_container clearfix">
+          <input type="checkbox" value="None" id="save_id_checkbox" name="check">
+          <label for="save_id_checkbox" class="save_id_check align_left">아이디 저장</label>
+          
+          <div class="find_id_password align_right">
+            <a href="#">아이디 찾기</a>
+            <span>/</span>
+            <a href="#">비밀번호</a>
+          </div>
+        </div>
+      </div>
     </div>
     
   </section>
-  <section class="selads_intro">
+  <section id="selads_intro" class="selads_intro">
     <div class="container">
       <div class="centered_contents">
         <h2 class="intro_heading">
@@ -86,12 +98,12 @@
       </div>
     </div>
   </section>
-  <section class="selads_footer_section">
+  <section id="selads_footer_section" class="selads_footer_section">
     <div class="container">
       <div class="centered_contents">
-        <img class="selads_shorthandLogo" src="images/selads_logo_shorthand.png" alt="selads" width="121px">
+        <img class="selads_shorthandLogo" src="images/selads_logo_shorthand.png" alt="selads" width="121">
         <h2 class="selads_endcopy">지금, 샐러즈를 이용해보세요!</h2>
-        <button class="btn_primary btn_center unit_2">시작하기</button>
+        <a class="btn-primary btn-center unit_2" href="#selads_index">시작하기</a>
 
         <address>Copyright  (주)두손컴퍼니. All rights reserved.</address>
       </div>
