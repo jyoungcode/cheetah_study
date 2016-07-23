@@ -1,6 +1,8 @@
 @charset "utf-8";
 /*! common.css © yamoo9.net, 2016 */
 
+a { text-decoration: none; }
+
 /* 목록 초기화 재사용 가능한 스타일 모듈 */
 ul, ol{
   margin-top:    0;

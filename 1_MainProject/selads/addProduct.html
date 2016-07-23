@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/input.css">
   <link rel="stylesheet" href="css/addProduct.css">
   <link rel="stylesheet" href="../Resources/ionicons/ionicons.min.css">
+  <link rel="stylesheet" href="css/buttons.css">
 <!--   <link rel="shortcut icon" href="images/favicon_selards.png"> -->
 </head>
 <body>
@@ -59,26 +60,41 @@
       <div class="entire_form_product unit_7">
         <div class="head_product clearfix">
             <div class="toggle_wrap">
-            <button class="btn_toggle_product ion-arrow-down-b"></button>
-            <span>상품1</span>
-            <span>( 1/5 )</span>
+              <button class="btn_toggle_product ion-arrow-down-b"></button>
+              <span class="product_title">상품1</span>
+              <span class="product_count">( 1 / 5 )</span>
             </div><!-- toggle_wrap-->
-            <button class="btn_del unit_1">삭제</button>
+            <button class="btn_del unit_1 btn-right">삭제</button>
         </div><!-- head_product -->
 
         <div class="product_info clearfix">
-            <div class="product_title clearfix unit_3">
-              <div>품명</div>
-              <input type="text" class="unit_3" />
+            <div class="product_name unit_3 mr_3">
+              <div class="product_label">품명</div>
+              <input type="text" class="unit_3 no_gutter" placeholder="제품명을 입력하세요." />
             </div><!--product_title-->
 
-            <div class="product_barCode clearfix unit_3">
-              <div>바코드</div>
-              <input type="text" class="unit_3" />
+            <div class="product_barCode unit_3">
+              <div class="product_label">바코드</div>
+              <input type="text" class="unit_3 no_gutter" placeholder="예) 8899282-02-0212" />
             </div><!--product_barCode-->
-        </div><!-- info_product -->
 
-      </div><!-- form_product -->
+            <div class="product_color unit_3 mr_3">
+              <div class="product_label">색상</div>
+              <input type="text" class="unit_3 no_gutter" placeholder="예) NAVY, BLUE" />
+            </div><!--product_barCode-->
+
+            <div class="product_size unit_3">
+              <div class="product_label">사이즈</div>
+              <input type="text" class="unit_3 no_gutter" placeholder="예) 95사이즈, 100사이즈" />
+            </div><!--product_barCode-->
+
+            <div class="product_url unit_3">
+              <div class="product_label">참고 URL</div>
+              <input type="text" class="unit_5 no_gutter" placeholder="상품 관련된 웹페이지 주소를 입력해주세요." />
+            </div><!--product_barCode-->
+        </div><!-- product_info -->
+
+      </div><!-- entire_form_product -->
     </div><!-- main -->
     
     <div class="footer clearfix">
