@@ -101,3 +101,43 @@ li li {
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+.agree_content{
+	display: inline-block;
+	position: relative;
+	height: 30px;
+	top: 0px;
+
+}
+.agree .checkbox_agree{
+	visibility: hidden;
+}
+
+.checkbox_agree + span{
+	position: relative;
+	display: inline-block;
+	width: 400px;
+	height: 24px;
+	padding-left: 20px;
+	background: url("../images/checked-box.png") no-repeat;
+}
+
+.agree span::after {
+	content: '';
+	position: absolute;
+	z-index: 1000;
+	width: 14px;
+	height: 9px;
+	top: 7px;
+	left: 5px;
+	background: url("../images/checkbox-success.png");
+	opacity: 0;
+}
+
+.agree span:hover::after {
+	opacity: 0.3;
+}
+
+input[type=checkbox]:checked + span::after {
+	opacity: 1;
+}

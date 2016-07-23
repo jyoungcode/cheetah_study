@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="css/join.css">
   <link rel="shortcut icon" href="images/favicon_selards.png">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
   <div class="selards_header">
@@ -95,13 +94,12 @@
                     <input id="company_email" class="input_default" title="이메일 아이디" type="text" placeholder="담당자 이메일">
                   </li>
                   <li>
-                    &commat;<!--<label for="company_emailAddress" class="readable-hidden"></label> -->
-                    <input class="input_default" title="이메일 도메인" type="text">
+                    &commat;<input class="input_default" title="이메일 도메인" type="text">
                   </li>
                   <li>
                       <div class="dropdown">
                         <div class="dropbtn select_email">직접입력</div>
-                        <div class="dropdown-content select_content">
+                        <div class="dropdown-content">
                           <a href="#">naver.com</a>
                           <a href="#">nate.com</a>
                           <a href="#">gmail.com</a>
@@ -295,13 +293,13 @@
              </table>
            </div><!--terms_privacy-->
            <div class="agree">
+             <label for="check_agree" class="agree_content">
              <input id="check_agree" type="checkbox" class="checkbox_agree">
-             <label for="check_agree" class="agree_content">이용약관 및 개인정보 동의내용을 확인하고, 동의합니다.</label>
+             <span>이용약관 및 개인정보 동의내용을 확인하고, 동의합니다.</span></label>
            </div><!--agree-->
         </div><!--terms_and_conditions-->
         <div class="join grid unit_8">
-          <!-- <a class="btn-primary btn_join unit_3">동의하고 회원가입</a> -->
-          <input class="btn_primary btn_join unit_3" type="submit" value="동의하고 회원가입">
+          <label><input class="btn_primary btn_join unit_3" type="submit" value="동의하고 회원가입"></label>
         </div><!--join-->
       </section>
     </div>
@@ -320,21 +318,13 @@ Copyright © (주)두손컴퍼니. All rights reserved.
 
       </div><!--inner_footer-->
   </div>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script>
-   $(document).ready(function(){
-      $(".dropdown").click(function(){
-          $(".dropdown-content").toggle();
-      });
-  });
-</script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-   $(document).ready(function(){
-      $(".select_email").click(function(){
-          $(".select_content").toggle();
+      console.log('ready')
+      $(".select_email").click(function(){  
+        console.log('clicked!!');
+        $(".select_content").toggle('.open_dropdown');
       });
-  });
 </script>
 <script src="js/toggleBaseline.js"></script>
 </body>
