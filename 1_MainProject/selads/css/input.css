@@ -29,7 +29,7 @@ span.input_group_line {
 }
 
 .dropbtn {
-  width: 220px;
+  width: 200px;
   height: 48px;
   padding-left: 20px;
   line-height: 48px;
@@ -58,7 +58,7 @@ span.input_group_line {
 }
 
 .dropdown-content {
-  width: 220px;
+  width: 200px;
   height: 140px;
   border: 2px solid #e4e4e4;
   display: none;

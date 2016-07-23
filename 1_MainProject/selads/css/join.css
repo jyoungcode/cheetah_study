@@ -5,7 +5,7 @@
 .heading_group {
 	height: 72px;
 }
-li {
+.main li {
 	margin-top: 24px;
 }
 fieldset {
@@ -20,8 +20,9 @@ label.readable-hidden {
 	display: block;
 }
 section > div, form {
-	padding-top: 24px;
+	/*padding-top: 24px;*/
 	padding-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 li li {
