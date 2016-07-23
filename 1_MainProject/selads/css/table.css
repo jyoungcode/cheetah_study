@@ -12,6 +12,9 @@
 .table td {
   position: relative;
   color: #232323;
+  line-height: 1.5;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .table thead th {

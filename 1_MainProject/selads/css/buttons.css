@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 /* 기본 버튼 모듈 */
-button[class*="btn-"],
-a[class*="btn-"] {
+input[class*="btn_"],
+button[class*="btn_"],
+a[class*="btn_"] {
   display: block;
   height: 48px;
   line-height: 48px;
@@ -14,48 +15,58 @@ a[class*="btn-"] {
 }
 
 /* 중요 버튼 */
-button.btn-primary,
-a.btn-primary  {background: #00a651; border-color:#009b4c; color: #fff;}
+input.btn_primary,
+button.btn_primary,
+a.btn_primary  {background: #00a651; border-color:#009b4c; color: #fff;}
 /* 주요 버튼 */
-button.btn-default,
-a.btn-default  {background: #f6f9f3; border-color:#dedede; color: #232323;}
+input.btn_default,
+button.btn_default,
+a.btn_default  {background: #f6f9f3; border-color:#dedede; color: #232323;}
 /* 기본 버튼 */
-button.btn-plain,
-a.btn-plain    {background: #fff;    border-color:#dedede; color: #232323;}
+input.btn_plain,
+button.btn_plain,
+a.btn_plain    {background: #fff;    border-color:#dedede; color: #232323;}
 
 /* 버튼 상태 디자인 모듈 */
-button.btn-primary:hover,
-a.btn-primary:hover  {background: #009b4c;}
-button.btn-default:hover,
-a.btn-default:hover  {background: #f2f6ef;}
-button.btn-plain:hover,
-a.btn-plain:hover    {background: #f9f9f9;}
+input.btn_primary:hover,
+button.btn_primary:hover,
+a.btn_primary:hover  {background: #009b4c;}
+input.btn_default:hover,
+button.btn_default:hover,
+a.btn_default:hover  {background: #f2f6ef;}
+input.btn_plain:hover,
+button.btn_plain:hover,
+a.btn_plain:hover    {background: #f9f9f9;}
 
-button.btn-primary:active,
-a.btn-primary:active  {background: #008240;}
-button.btn-default:active,
-a.btn-default:active  {background: #e4e9e1;}
-button.btn-plain:active,
-a.btn-plain:active    {background: #f3f3f3;}
+input.btn_primary:active,
+button.btn_primary:active,
+a.btn_primary:active  {background: #008240;}
+input.btn_default:active,
+button.btn_default:active,
+a.btn_default:active  {background: #e4e9e1;}
+input.btn_plain:active,
+button.btn_plain:active,
+a.btn_plain:active    {background: #f3f3f3;}
 
 /* 버튼 크기 모듈 */
-/* btn-large 클래스를 사용하면 높이가 기본의 2배인 버튼이 됩니다. */
-[class*="btn-"].btn-large {
+/* btn_large 클래스를 사용하면 높이가 기본의 2배인 버튼이 됩니다. */
+[class*="btn_"].btn_large {
   height: 72px;
   line-height: 72px;
 }
 
 /* 버튼 위치 클래스 모듈 */
 /* 버튼의 위치가 그리드 디자인으로 처리하기 어려운 경우, 버튼 위치 클래스를 이용하여 처리할 수 있습니다.. */
-.btn-left {
+.btn_left {
   float: left;
 }
-.btn-center {
+.btn_center {
+  display: block;
   float: none;
   margin-right: auto;
   margin-left: auto;
 }
-.btn-right {
+.btn_right {
   float: right;
 }
 
