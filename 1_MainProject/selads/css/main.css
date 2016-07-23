@@ -154,7 +154,7 @@ left: 50%; */
   color: #4d4947;
 }
 
-.selads_index button, .selads_index a[class*="btn-"] {
+.selads_index button, .selads_index a[class*="btn_"] {
   margin-bottom: 24px;
   margin-left: 0;
   margin-right: 0;
