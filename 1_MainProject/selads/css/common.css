@@ -140,7 +140,7 @@ body { background-color: #f2f2f2;}
 /* main_content_placement */
 .main {
   margin-top: 48px;
-  min-height: 640px;
+  min-height: 800px;
   background: #fff;
   position: relative;
   /*border: 1px solid #dedede;  */
