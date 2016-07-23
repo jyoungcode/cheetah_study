@@ -139,6 +139,7 @@ body { background-color: #f2f2f2;}
 
 /* main_content_placement */
 .main {
+  height: 150vh;
   margin-top: 48px;
   min-height: 640px;
   background: #fff;

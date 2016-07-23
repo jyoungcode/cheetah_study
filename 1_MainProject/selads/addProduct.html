@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<!--[if IE 9]><html lang="ko-KR" class="lt-ie10 ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta charset="UTF-8">
-  <title>주문확인</title>
+  <title>상품등록 &#124; SELADS</title>
   <link rel="stylesheet" href="css/ress.min.css">
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/SpoqaHanSans-kr.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/input.css">
-  <link rel="stylesheet" href="css/addProduct.css">
   <link rel="stylesheet" href="../Resources/ionicons/ionicons.min.css">
   <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/addProduct.css">
+  <script   src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!--   <link rel="shortcut icon" href="images/favicon_selards.png"> -->
 </head>
 <body>
@@ -52,19 +54,19 @@
         <ul class="heading_pageNavigation reset-list">
             <li>홈</li>
             <li>주문하기</li>
-            <li>예상견적/소요기간</li>
+            <li>상품 등록</li>
           </ul>
       </div><!-- heading_group -->
 
       <!-- product_sheet -->
-      <div class="entire_form_product unit_7">
+      <div class="entire_form_product unit_7 no_gutter">
         <div class="head_product clearfix">
             <div class="toggle_wrap">
               <button class="btn_toggle_product ion-arrow-down-b"></button>
               <span class="product_title">상품1</span>
               <span class="product_count">( 1 / 5 )</span>
             </div><!-- toggle_wrap-->
-            <button class="btn_del unit_1 btn-right">삭제</button>
+            <button class="btn_del unit_1 btn_right">삭제</button>
         </div><!-- head_product -->
 
         <div class="product_info clearfix">
@@ -95,6 +97,19 @@
         </div><!-- product_info -->
 
       </div><!-- entire_form_product -->
+      
+      <!-- side_button -->
+      <div class="product_add_wrap unit_3 ml_2">
+        <!-- a 대신 button 넣어야 하는데..-->
+        <a class="btn_product_add btn_default unit_3 no_gutter">상품 추가</a>
+        <div class="product_add_caution unit_3 no_gutter clearfix">
+          <img src="images/icon_notice_strong.png" alt="">
+          <span>최대 5개까지 등록 가능.</span>
+          <a href="#" class="btn_product_register btn_primary unit_3 no_gutter">상품 등록 완료</a>
+        </div><!-- product_add_caution -->
+
+        <button class="product_register"></button>
+      </div><!--product_add_wrap-->
     </div><!-- main -->
     
     <div class="footer clearfix">
@@ -110,6 +125,14 @@
         </div><!--inner_footer-->
     </div><!-- footer -->
 
+<script>
+   $(document).ready(function(){
+      $(".btn_toggle_product").click(function(){
+          $(".product_info").toggle();
+      });
+  });
+</script>
+<script src="js/placeholders.min.js"></script>
 <script src="js/toggleBaseline.js"></script>
 </body>
 </html>
