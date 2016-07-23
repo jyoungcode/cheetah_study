@@ -43,50 +43,62 @@
     <div class="wrap">
       <div class="heading_group">
         <h3 class="heading">회원 가입</h3>
-        <p class="heading_description">셀러즈 회원이 되어 편리한 배송서비스를 이용해보세요.</p>  
-      </div>
+        <p class="heading_description">셀러즈 회원이 되어 편리한 배송서비스를 이용해보세요.</p>
+      </div><!---->
       <section class="grid push_1">
 
-        <div class="required_info grid unit_8">
-          <h5>01 필수정보</h5>
-          <ul>
-            <li>
-              <input class="input_default" type="text" placeholder="이름">
-            </li>
-            <li>
-              <input class="input_default" type="text" placeholder="아이디">
-            </li>
-            <li>
-                <input class="input_default" type="password" placeholder="비밀번호">
-            </li>
-            <li>
-                <input class="input_default" type="password" placeholder="비밀번호 재입력">
-            </li>
-          </ul>
-        </div><!--required_info-->
+        <form class="required_info grid unit_8">
+          <fieldset class="formset">
+            <legend>01 필수정보</legend>
+            <ul>
+              <li>
+                <label for="user_name" class="readable-hidden">이름</label>
+                <input id="user_name" class="input_default" type="text" placeholder="이름">
+              </li>
+              <li>
+                  <label for="user_id" class="readable-hidden">아이디</label>
+                  <input id="user_id" class="input_default" type="text" placeholder="아이디">
+              </li>
+              <li>
+                  <label for="user_password" class="readable-hidden">비밀번호</label>
+                  <input id="user_password" class="input_default" type="password" placeholder="비밀번호">
+              </li>
+              <li>
+                  <label for="user_passwd_confirm" class="readable-hidden">비밀번호 재입력</label>
+                  <input id="user_passwd_confirm" class="input_default" type="password" placeholder="비밀번호 재입력">
+              </li>
+            </ul>
+          </fieldset>
+        </form><!--required_info-->
 
-        <div class="business_info grid unit_8">
-          <h5>02 업체 가입정보</h5>
-          <ul>
-            <li>
-              <input class="input_default " type="text" placeholder="업체명">
-            </li>
-            <li>
-                <input class="input_default" type="text" placeholder="사업자 등록번호">
-            </li>
-            <li>
-                <input class="input_default" type="text" placeholder="담당자 이름">
-            </li>
-            <li class="form_manager_email clearfix">
+        <form class="business_info grid unit_8">
+          <fieldset>
+            <legend>02 업체 가입정보</legend>
+            <ul>
+              <li>
+                <label for="company_name" class="readable-hidden">업체명</label>
+                <input id="company_name" class="input_default " type="text" placeholder="업체명">
+              </li>
+              <li>
+                <label for="company_code" class="readable-hidden">사업자 등록번호</label>
+                <input id="company_code" class="input_default" type="text" placeholder="사업자 등록번호">
+              </li>
+              <li>
+                <label for="company_chargePerson" class="readable-hidden">담당자 이름</label>
+                <input id="company_chargePerson" class="input_default" type="text" placeholder="담당자 이름">
+              </li>
+              <li class="form_manager_email clearfix">
                 <ul>
                   <li>
-                    <input class="input_default" type="text" placeholder="담당자 이메일">
-                     &commat;<input class="input_default" type="text">
+                    <label for="company_email" class="readable-hidden">담당자 이메일</label>
+                    <input id="company_email" class="input_default" title="이메일 아이디" type="text" placeholder="담당자 이메일">
                   </li>
-                  
+                  <li>
+                    &commat;<input class="input_default" title="이메일 도메인" type="text">
+                  </li>
                   <li>
                       <div class="dropdown">
-                        <button class="dropbtn">직접입력</button>
+                        <div class="dropbtn select_email">직접입력</div>
                         <div class="dropdown-content">
                           <a href="#">naver.com</a>
                           <a href="#">nate.com</a>
@@ -95,12 +107,14 @@
                       </div>
                   </li>
                 </ul>
-            </li><!--form_manager_email-->
-            <li>
-                <input class="input_default" type="text" placeholder="휴대폰 번호(-없이 입력)">
-            </li>
-          </ul>
-        </div><!--business_info-->
+              </li><!--form_manager_email-->
+              <li>
+                <label for="company_phone" class="readable-hidden">휴대폰 번호</label>
+                <input id="company_phone" class="input_default" type="text" placeholder="휴대폰 번호(-없이 입력)">
+              </li>
+            </ul>
+          </fieldset>
+        </form><!--business_info-->
 
         <div class="terms_and_conditions grid unit_8">
            <h5>03 이용약관 동의 및 개인정보 수집 이용안내</h5>
@@ -259,7 +273,7 @@
 
               부 칙(시행일) 이 약관은 년 월 일부터 시행합니다.
              </div>
-           </div>
+           </div><!--terms_service-->
            <div class="terms_privacy">
              <table class="table">
                 <thead>
@@ -271,21 +285,22 @@
                 </thead>
                 <tbody class="terms_privacy_contents">
                   <tr>
-                    <td>이용자 식별, 서비스 이용 및 상담, 연령확인</td>
+                    <td>이용자 식별,<br>서비스 이용 및 상담,<br> 연령확인</td>
                     <td>성별, 생년월일</td>
                     <td>회원탈퇴 후 3개월</td>
                   </tr>
                 </tbody>
              </table>
-           </div>
+           </div><!--terms_privacy-->
            <div class="agree">
+             <label for="check_agree" class="agree_content">
              <input id="check_agree" type="checkbox" class="checkbox_agree">
-             <label for="check_agree">이용약관 및 개인정보 동의내용을 확인하고, 동의합니다.</label>
-           </div>
-        </div>
+             <span>이용약관 및 개인정보 동의내용을 확인하고, 동의합니다.</span></label>
+           </div><!--agree-->
+        </div><!--terms_and_conditions-->
         <div class="join grid unit_8">
-          <a class="btn-primary btn_join unit_3">동의하고 회원가입</a>
-        </div>
+          <label><input class="btn_primary btn_join unit_3" type="submit" value="동의하고 회원가입"></label>
+        </div><!--join-->
       </section>
     </div>
   </div>
@@ -303,15 +318,14 @@ Copyright © (주)두손컴퍼니. All rights reserved.
 
       </div><!--inner_footer-->
   </div>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script>
-   $(document).ready(function(){
-      $(".dropdown").click(function(){
-          $(".dropdown-content").toggle();
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+      console.log('ready')
+      $(".select_email").click(function(){  
+        console.log('clicked!!');
+        $(".select_content").toggle('.open_dropdown');
       });
-  });
 </script>
-
 <script src="js/toggleBaseline.js"></script>
 </body>
 </html>

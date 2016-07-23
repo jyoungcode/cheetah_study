@@ -2,11 +2,30 @@
 .required_info, .business_info {
 	border-bottom: 1px solid #acacac;
 }
-.heading_grounp, li {
-	margin-bottom: 24px;
+.heading_group {
+	height: 72px;
 }
+li {
+	margin-top: 24px;
+}
+fieldset {
+	border: none;
+}
+form legend {
+	font-size: 1.25rem; 
+	line-height: 3rem;
+	font-weight: bolder;
+}
+label.readable-hidden {
+	display: block;
+}
+section > div, form {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
 li li {
-	margin-bottom: 0px;
+	margin-top: 0px;
 }
 .business_info input {
 	width: 620px;
@@ -15,10 +34,10 @@ li li {
 	float: left;
 }
 .form_manager_email input {
-	width: 200px;
+	width: 195px;
 }
 .form_manager_email li:nth-child(1) input {
-	margin-right: 1px;
+	margin-right: 5px;
 }
 .form_manager_email li:nth-child(2) input {
 	margin-left: 1px;
@@ -29,7 +48,6 @@ li li {
 .form_manager_email .dropbtn {
 	width: 200px;
 }
-
 .terms_service > * {
 	padding-right: 20px;
 	padding-left: 20px;
@@ -39,15 +57,15 @@ li li {
 }
 .terms_service > h6 {
 	height: 48px;
-	line-height: 48px;
-	color: #232323;
+	border-bottom: 1px solid #dedede;
 	font-weight: 400;
 	background: #f9f9f9;
-	border-bottom:1px solid #dedede;
+	color: #232323;
+	line-height: 48px;
 }
 .terms_box {
-	height: 168px;
 	overflow-y: scroll;
+	height: 168px;
 	padding-top: 8px;
 	padding-bottom: 25px;
 }
@@ -58,35 +76,68 @@ li li {
 .table th, .table td {
 	width: 33.3333%;
 }
-
 .table tbody tr:hover {
 	background: transparent;
 }
-
 .table tr:hover td::after {
 	display: none;
 }
-
-.terms_privacy {
+.terms_service {
 	margin-top: 24px;
+	margin-bottom: 24px;
 }
-
-.terms_privacy_contents td:first-child {
-	width: 60px;
-}
-
 .agree {
 	text-align: center;
 }
-
 .join {
 	position: relative;
 	height: 48px;
+	margin-top: 24px;
+	margin-bottom: 24px;
 }
-
 .btn_join {
 	position: absolute;
 	top: 0%;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.agree_content{
+	display: inline-block;
+	position: relative;
+	height: 30px;
+	top: 0px;
+
+}
+.agree .checkbox_agree{
+	visibility: hidden;
+}
+
+.checkbox_agree + span{
+	position: relative;
+	display: inline-block;
+	width: 400px;
+	height: 24px;
+	padding-left: 20px;
+	background: url("../images/checked-box.png") no-repeat;
+}
+
+.agree span::after {
+	content: '';
+	position: absolute;
+	z-index: 1000;
+	width: 14px;
+	height: 9px;
+	top: 7px;
+	left: 5px;
+	background: url("../images/checkbox-success.png");
+	opacity: 0;
+}
+
+.agree span:hover::after {
+	opacity: 0.3;
+}
+
+input[type=checkbox]:checked + span::after {
+	opacity: 1;
 }
