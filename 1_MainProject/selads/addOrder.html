@@ -63,21 +63,30 @@
       <!-- 01 channel-info-->
       <div class="entire_form_order unit_7 ml_3">
         <div class="channel_register clearfix">
-            <h4 class="">01 판매 채널 정보 등록</h4>
+            <h4 class="mb_2">01 판매 채널 정보 등록</h4>
             <form action="#">
-              <input type="text" class="dropbtn dropdown dropdown-content unit_2" name="ch_select" />
-              <input type="file" id="ch_file" class="unit_5" name="upload" />
+            <div class="btn_channel_drop_wrap unit_2">
+                  <button class="btn_channel_drop">채널 선택
+                    <span class="ion-chevron-down ml_2"></span>
+                  </button>
+                  <div class="btn_channel_drop_contents">
+                    <ul>
+                      <li>와디즈</li>
+                      <li>텀블벅</li>
+                    </ul>
+                  </div><!--btn_channel_drop_contents-->
+              </div><!-- btn_channel_drop_wrap --> 
+              <input type="file" id="ch_file" class="unit_5 ml_2" name="upload" />
             </form>
         </div><!-- channel_register-->
-
-        <div class="channel_add_wrap unit_2 ml_2 clearfix">
-           <a class="btn_product_add btn-default unit_2 no_gutter">판매 채널 추가</a>
-        </div><!-- channel_add_wrap -->
       </div><!-- entire_form_order -->
+      <div class="channel_add_wrap unit_2 ml_2 clearfix">
+         <button class="btn_default unit_2 no_gutter">판매 채널 추가</button>
+      </div><!-- channel_add_wrap -->
 
       <!-- order_info_table -->
       <div class="order_info unit_10 clearfix ml_3">
-            <h4 class="">02 주문 정보 입력</h4>
+            <h4 class="mb_2">02 주문 정보 입력</h4>
             <table class="table">
                 <caption class="readable_hidden">주문정보입력</caption>
                 <thead>
@@ -146,8 +155,8 @@
 
 <script>
    $(document).ready(function(){
-      $(".btn_toggle_product").click(function(){
-          $(".product_info").toggle();
+      $(".btn_channel_drop_wrap").click(function(){
+          $(".btn_channel_drop_contents").toggle();
       });
   });
 </script>

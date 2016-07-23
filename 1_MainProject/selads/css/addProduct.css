@@ -18,7 +18,7 @@ div.entire_form_product {
 	color: #00a651; 
 	/*cursor: pointer; */
 	height: 0;
-	line-height: 0;
+	line-height: 10px;
 	font-size: 20px;
 }
 .product_title{ font-weight: 900; margin-left: 25px; float: left;}
@@ -71,3 +71,7 @@ a[class*="btn_product_"] {
 .mr_2 { margin-right: 20px; }
 .mr_3 { margin-right: 30px; }
 .mr_4 { margin-right: 40px; }
+.mb_1 { margin-bottom: 12px; }
+.mb_2 { margin-bottom: 24px; }
+.mb_3 { margin-bottom: 36px; }
+.mb_4 { margin-bottom: 48px; }
