@@ -1,0 +1,15 @@
+.popUp_Estimate {
+	width:460px;
+	height: 460px;
+	border: 1px solid #dedede;
+	border-radius: 10px;
+	background: #fff;
+}
+}
+
+.popUp_Style {
+	width: 460px;
+	height: 70px;
+	line-height: 70px;
+	border: 1px solid #000;
+}
