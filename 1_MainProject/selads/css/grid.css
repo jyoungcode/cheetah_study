@@ -14,7 +14,6 @@
 	height:  200vh;
 	background:  linear-gradient(transparent 95%, hsla(0, 0%, 0%, 0.2) 95%),
 				linear-gradient(to right, transparent 10px, hsla(92, 81%, 64%, 0.2) 10px, hsla(92, 81%, 64%, 0.2) 70px,transparent 70px);
-	background-size:  1px 24px, 80px 1px;
 }
 
 .grid::after,
@@ -33,12 +32,12 @@
 	margin-right: 10px;
 }
 
-[class*="unit_"] [class*="unit_"]:first-child{
+/*[class*="unit_"] [class*="unit_"]:first-child{
 	margin-left: 0px;
 }
 [class*="unit_"] [class*="unit_"]:last-child{
 	margin-right: 0px;
-}
+}*/
 
 /* 12 column */
 .unit_1 {width: 60px;}

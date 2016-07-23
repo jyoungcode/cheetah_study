@@ -56,7 +56,7 @@ a.btn-plain:active    {background: #f3f3f3;}
   margin-left: auto;
 }
 .btn-right {
-  float: right !important;
+  float: right;
 }
 
 /* BTN-ID 부분 */
