@@ -14,7 +14,6 @@
 	height:  200vh;
 	background:  linear-gradient(transparent 95%, hsla(0, 0%, 0%, 0.2) 95%),
 				linear-gradient(to right, transparent 10px, hsla(92, 81%, 64%, 0.2) 10px, hsla(92, 81%, 64%, 0.2) 70px,transparent 70px);
-	background-size:  1px 24px, 80px 1px;
 }
 
 .grid::after,
@@ -106,6 +105,6 @@
 
 
 .no_gutter {
-	margin-left: 0;
 	margin-right: 0;
+	margin-left: 0;
 }
