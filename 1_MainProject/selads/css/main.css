@@ -1,13 +1,12 @@
+@charset "utf-8";
+
 html, body {
-  min-height: 100%;
-}
-
-body {
-
   height: 100%;
-  font-family: 'Spoqa Han Sans', 'Sans-serif';
+  background: url("../images/index_background.png");
+  background-size: auto 100%;
+  background-position: center;
+  background-attachment: fixed;
 }
-
 ul {
   list-style: none;
 }
@@ -18,16 +17,27 @@ a {
 }
 
 section {
-  width: 960px;
-  height: 100%;
+  min-height: 100%;
+}
+.container {
+  width:960px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.centered_contents {
+  width: 960px;
+  height: 640px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-left: -480px;
+  margin-top: -320px;
+  border-top: 1px solid transparent;
+}
+
+
 .selads_index {
-  background: url("../images/index_background.png");
-  background-size: auto 100%;
-  background-position: center;
   position: relative;
   color: #fff;
 }
@@ -110,39 +120,136 @@ section {
   color: #747474;
 }
 
+/* 하위 section 디자인 */
+/* 하위 공통 모듈 */
 
+/* 섹션 제목 */
+.process_heading, .intro_heading {
+  width: 325px;
+  /* margin-top: 24px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.process_heading {
+  color: #232323;
+  padding-top: 48px;
+}
 
+/* 셀러즈 소개 섹션 */
 .selads_intro {
+  background: #00a651;
+  background: linear-gradient(#00a651 46%, #f2f6ef 46%);
   text-align: center;
   color: #fff;
   height: 100%;
+  position: relative;
 }
+
+.selads_intro [class*="_heading"]::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.selads_intro .process_heading::after {
+  background: #333;
+}
+
+/* 셀러즈 소개 단락 */
 .selads_introDescription {
-  margin-top: 42px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
-.selads_process {
-  text-align: center;
-  color: #fff;
-  height: 100%;
+.selads_introDescription span {
+  display: inline-block;
+  background: #D1FFD7;
+  color: #232323;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  margin-right: 0.15em;
+
 }
 
+/* 셀러즈 소개 트럭 아이콘 */
+.intro_heading::before {
+  content: '';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 37px;
+  height: 20px;
+  background: url(../images/icon-truck.png);
+  background-size: cover;
+}
 
-.selads_process .process_steps {
+/* 셀러즈 프로세스 */
+.process_steps {
   text-align: center;
   margin-top:42px;
   margin-bottom: 72px;
 }
-.selads_process .process_steps li {
+.process_steps li {
+  position: relative;
   display: inline-block;
-  width: 160px;
-  height: 160px;
-  line-height: 160px;
+  font-size: 18px;
+  padding: 60px 40px;
   border-radius: 80px;
   border:4px solid #fff;
   margin-right: 20px;
+  background: #fff;
+  color: #232323;
+  transition: all 0.25s;
+  top:0;
+}
+.process_steps li:hover {
+  top: -10px;
 }
 
-.selads_process .process_steps li:last-child {
+.process_steps .step {
+  width: 100%;
+  position: absolute;
+  display: inline-block;
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bolder;
+  position: absolute;
+  top: 36px;
+  left: 0;
+}
+
+.process_steps li:last-child {
   margin-right: 0px;
+}
+
+
+.selads_endcopy {
+  margin-bottom: 24px;
+}
+
+.selads_footer_section {
+  position: relative;
+  text-align: center;
+  color: #Fff;
+  height: 100%;
+  background: linear-gradient(transparent, #fff);
+}
+.selads_footer_section .selads_shorthandLogo {
+  margin-top: 24px;
+}
+.selads_footer_section .selads_endcopy {
+  padding-top: 24px;
+}
+
+.selads_footer_section address {
+  width: 100%;
+  text-align: center;
+  color: #232323;
+  position: absolute;
+  bottom: 0;
+
 }
