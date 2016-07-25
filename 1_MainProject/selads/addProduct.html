@@ -14,8 +14,7 @@
   <link rel="stylesheet" href="../Resources/ionicons/ionicons.min.css">
   <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="css/addProduct.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<!--   <link rel="shortcut icon" href="images/favicon_selards.png"> -->
+  <link rel="shortcut icon" href="images/favicon_selads.png">
 </head>
 <body>
     <div class="selards_header">
@@ -23,7 +22,6 @@
         <h1 class="selards_logo unit_3">
           <a href="#"><img src="images/selards_logos.svg" alt="SELARDS" width="150" height="48"></a>
         </h1>
-        <!--[start]-->
         <nav class="header_gnb unit_6">
           <ul class="reset-list">
             <li><a href="#" class="slide_up">주문하기</a></li>
@@ -36,12 +34,11 @@
             <li><a href="#" class="slide_up">로그아웃</a></li>
           </ul>
         </nav><!--header_unb-->
-        <!--[end]-->
       </div><!--header_wrap-->
     </div><!-- selards_header-->
 
-    
-    <div class="main">
+    <!-- main -->
+    <div class="main clearfix">
       <div class="main_edge"></div>
       <!-- 접근성 관점에서 넣어줘야 한다. -->
       <div class="order_label">
@@ -59,12 +56,15 @@
       </div><!-- heading_group -->
 
       <!-- product_sheet -->
-      <div class="entire_form_product unit_7 no_gutter">
+      <div class="entire_form_product unit_7 no_gutter mb_2">
         <div class="head_product clearfix">
-            <div class="toggle_wrap clearfix">
-              <button class="btn_toggle_product ion-arrow-down-b clearfix"></button>
-              <span class="product_title">상품1</span>
-              <span class="product_count">( 1 / 5 )</span>
+            <div class="toggle_wrap btn_left">
+              <button class="btn_toggle_product">
+                <span class="ion-arrow-down-b"></span>
+                <span class="product_title">상품1</span>
+                <span class="product_count">( 1 / 5 )</span>
+              </button>
+             
             </div><!-- toggle_wrap-->
             <button class="btn_del unit_1 btn_right">삭제</button>
         </div><!-- head_product -->
@@ -95,11 +95,54 @@
               <input type="text" class="unit_5 no_gutter" placeholder="상품 관련된 웹페이지 주소를 입력해주세요." />
             </div><!--product_barCode-->
         </div><!-- product_info -->
-
       </div><!-- entire_form_product -->
-      
+
+            <!-- product_sheet -->
+      <div class="entire_form_product unit_7 no_gutter mb_2">
+        <div class="head_product clearfix">
+            <div class="toggle_wrap btn_left">
+              <button class="btn_toggle_product">
+                <span class="ion-arrow-down-b"></span>
+                <span class="product_title">상품1</span>
+                <span class="product_count">( 1 / 5 )</span>
+              </button>
+             
+            </div><!-- toggle_wrap-->
+            <button class="btn_del unit_1 btn_right">삭제</button>
+        </div><!-- head_product -->
+
+        <div class="product_info clearfix">
+            <div class="product_name unit_3 mr_3">
+              <div class="product_label">품명</div>
+              <input type="text" class="unit_3 no_gutter" placeholder="제품명을 입력하세요." />
+            </div><!--product_title-->
+
+            <div class="product_barCode unit_3">
+              <div class="product_label">바코드</div>
+              <input type="text" class="unit_3 no_gutter" placeholder="예) 8899282-02-0212" />
+            </div><!--product_barCode-->
+
+            <div class="product_color unit_3 mr_3">
+              <div class="product_label">색상</div>
+              <input type="text" class="unit_3 no_gutter" placeholder="예) NAVY, BLUE" />
+            </div><!--product_barCode-->
+
+            <div class="product_size unit_3">
+              <div class="product_label">사이즈</div>
+              <input type="text" class="unit_3 no_gutter" placeholder="예) 95사이즈, 100사이즈" />
+            </div><!--product_barCode-->
+
+            <div class="product_url unit_3">
+              <div class="product_label">참고 URL</div>
+              <input type="text" class="unit_5 no_gutter" placeholder="상품 관련된 웹페이지 주소를 입력해주세요." />
+            </div><!--product_barCode-->
+        </div><!-- product_info -->
+      </div><!-- entire_form_product -->
+
+     
+
       <!-- side_button -->
-      <div class="product_add_wrap unit_3 ml_2">
+      <div class="product_add_wrap unit_3 ml_2 clearfix">
         <!-- a 대신 button 넣어야 하는데..-->
         <a class="btn_product_add btn_default unit_3 no_gutter">상품 추가</a>
         <div class="product_add_caution unit_3 no_gutter clearfix">
@@ -121,18 +164,11 @@
   전화 : 070-4773-0080 | 팩스 : 02-499-7622 | 사업자등록번호 : 201-86-31231 | 통신판매업신고 : 제 2014-서울중구-0229호<br>
   개인정보관리책임자 : 조은애(<a href="#">info@dohands.com</a>) |  배송조회 : CJ대한통운택배<br>
   Copyright © (주)두손컴퍼니. All rights reserved.
-
         </div><!--inner_footer-->
     </div><!-- footer -->
 
-<script>
-   $(document).ready(function(){
-      $(".btn_toggle_product").click(function(){
-          $(".product_info").toggle();
-      });
-  });
-</script>
-<script src="js/placeholders.min.js"></script>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/btn_toggle.js"></script>
 <script src="js/toggleBaseline.js"></script>
 </body>
 </html>

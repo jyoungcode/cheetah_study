@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/table.css">
   <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="css/join.css">
-  <link rel="shortcut icon" href="images/favicon_selards.png">
+  <link rel="shortcut icon" href="images/favicon_selads.png">
 </head>
 <body>
   <div class="selards_header">
@@ -39,7 +39,7 @@
   </div><!-- selards_header-->
 
 
-  <div class="main grid">
+  <div class="main clearfix">
     <div class="main_edge"></div>
     <div class="wrap">
       <div class="heading_group">
@@ -100,7 +100,7 @@
                   <li>
                       <div class="dropdown">
                         <div class="dropbtn select_email">직접입력</div>
-                        <div class="dropdown-content">
+                        <div class="dropdown-content select_content">
                           <a href="#">naver.com</a>
                           <a href="#">nate.com</a>
                           <a href="#">gmail.com</a>
@@ -306,7 +306,6 @@
     </div>
   </div>
 
-
   <div class="footer clearfix">
     <div class="footer_logo unit_3">
       <a href="#"><img src="images/footer-svg-logo.png" alt="SELARDS" width="150" height="48"></a>
@@ -319,14 +318,8 @@ Copyright © (주)두손컴퍼니. All rights reserved.
 
       </div><!--inner_footer-->
   </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-      console.log('ready')
-      $(".select_email").click(function(){  
-        console.log('clicked!!');
-        $(".select_content").toggle('.open_dropdown');
-      });
-</script>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/btn_toggle.js"></script>
 <script src="js/toggleBaseline.js"></script>
 </body>
 </html>

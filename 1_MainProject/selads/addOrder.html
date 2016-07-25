@@ -14,10 +14,8 @@
   <link rel="stylesheet" href="../Resources/ionicons/ionicons.min.css">
   <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="css/table.css">
-  <link rel="stylesheet" href="css/addProduct.css">
   <link rel="stylesheet" href="css/addOrder.css">
-  <script   src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<!--   <link rel="shortcut icon" href="images/favicon_selards.png"> -->
+  <link rel="shortcut icon" href="images/favicon_selads.png">
 </head>
 <body>
     <div class="selards_header">
@@ -25,7 +23,6 @@
         <h1 class="selards_logo unit_3">
           <a href="#"><img src="images/selards_logos.svg" alt="SELARDS" width="150" height="48"></a>
         </h1>
-        <!--[start]-->
         <nav class="header_gnb unit_6">
           <ul class="reset-list">
             <li><a href="#" class="slide_up">주문하기</a></li>
@@ -38,12 +35,11 @@
             <li><a href="#" class="slide_up">로그아웃</a></li>
           </ul>
         </nav><!--header_unb-->
-        <!--[end]-->
       </div><!--header_wrap-->
     </div><!-- selards_header-->
 
     <!-- main -->
-    <div class="main">
+    <div class="main clearfix">
       <div class="main_edge"></div>
       <!-- 접근성 관점에서 넣어줘야 한다. -->
       <div class="order_label">
@@ -61,9 +57,9 @@
       </div><!-- heading_group -->
 
       <!-- 01 channel-info-->
-      <div class="entire_form_order unit_7 ml_3">
-        <div class="channel_register clearfix">
-            <h4 class="mb_2">01 판매 채널 정보 등록</h4>
+      <div class="entire_form_order unit_7 ml_3 clearfix">
+        <div class="channel_register">
+            <h4 class="mb_4">01 판매 채널 정보 등록</h4>
             <form action="#">
             <div class="btn_channel_drop_wrap unit_2">
                   <button class="btn_channel_drop">채널 선택
@@ -71,8 +67,8 @@
                   </button>
                   <div class="btn_channel_drop_contents">
                     <ul>
-                      <li>와디즈</li>
-                      <li>텀블벅</li>
+                      <li><a href="#">와디즈</a></li>
+                      <li><a href="#">텀블벅</a></li>
                     </ul>
                   </div><!--btn_channel_drop_contents-->
               </div><!-- btn_channel_drop_wrap --> 
@@ -86,9 +82,9 @@
 
       <!-- order_info_table -->
       <div class="order_info unit_10 clearfix ml_3">
-            <h4 class="mb_2">02 주문 정보 입력</h4>
+            <h4 class="mb_4">02 주문 정보 입력</h4>
             <table class="table">
-                <caption class="readable_hidden">주문정보입력</caption>
+                <caption class="readable-hidden">주문정보입력</caption>
                 <thead>
                     <tr class="table-grid">
                         <th class="col-1-10">번호</th>
@@ -136,7 +132,7 @@
             </table>
         </div><!-- order_info -->
 
-      <!-- <input type="submit" value="주문정보 등록" class="btn-primary unit_3 no_gutter"> -->
+      <input type="submit" value="주문정보 등록" class="btn_order_register btn_primary unit_3 no_gutter mb_4">
       
     </div><!-- main -->
     
@@ -149,17 +145,10 @@
   전화 : 070-4773-0080 | 팩스 : 02-499-7622 | 사업자등록번호 : 201-86-31231 | 통신판매업신고 : 제 2014-서울중구-0229호<br>
   개인정보관리책임자 : 조은애(<a href="#">info@dohands.com</a>) |  배송조회 : CJ대한통운택배<br>
   Copyright © (주)두손컴퍼니. All rights reserved.
-
         </div><!--inner_footer-->
     </div><!-- footer -->
 
-<script>
-   $(document).ready(function(){
-      $(".btn_channel_drop_wrap").click(function(){
-          $(".btn_channel_drop_contents").toggle();
-      });
-  });
-</script>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="js/toggleBaseline.js"></script>
 </body>
 </html>

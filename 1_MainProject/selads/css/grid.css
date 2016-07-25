@@ -8,12 +8,16 @@
 }
 .overlay_grid::before {
 	content: "";
+	display: block;
 	position: absolute;
+	top: 0;
+	left: 0;
 	z-index: 1000;
-	width: 960px;
+	width: 100%;
 	height:  200vh;
-	background:  linear-gradient(transparent 95%, hsla(0, 0%, 0%, 0.2) 95%),
+	background:  linear-gradient(to bottom, transparent 23px, hsla(0, 0%, 66%, 0.2) 23px),
 				linear-gradient(to right, transparent 10px, hsla(92, 81%, 64%, 0.2) 10px, hsla(92, 81%, 64%, 0.2) 70px,transparent 70px);
+	background-size: 1px 24px, 80px 1px;
 }
 
 .grid::after,
@@ -102,7 +106,6 @@
 .suffix_9 {padding-right: 730px;}
 .suffix_10 {padding-right: 810px;}
 .suffix_11 {padding-right: 890px;}
-
 
 .no_gutter {
 	margin-right: 0;

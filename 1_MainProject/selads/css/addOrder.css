@@ -1,11 +1,11 @@
 div.entire_form_order {
 	width: 560px; /* unit_7 + 20px */
-	height: 120px;
-	margin-bottom: 96px;
-	float: left; 
+	padding-bottom: 72px;
+	border-bottom: 1px solid #dedede;
 }
+.channel_register { float: left; }
 
-.channel_register { }
+.channel_register form { float: left; }
 
 .btn_channel_drop_wrap {
 	height: 48px;
@@ -21,11 +21,6 @@ div.entire_form_order {
 .btn_channel_drop {
 	cursor: pointer;
 }
-
-#ch_file {line-height: 27px; padding-top: 5px; }
-
-.channel_add_wrap { float: right; }
-
 .btn_channel_drop_contents {
 	width: 140px;
 	height: 100px;
@@ -39,3 +34,11 @@ div.entire_form_order {
 	background-color: #fff;
 	font-size: 14px;
 }
+
+#ch_file {line-height: 27px; padding-top: 5px; }
+.channel_add_wrap { float: right; }
+.order_info { padding-top: 72px; }
+
+.table { padding-bottom: 48px; }
+.btn_order_register { padding-left: 0; float: right;}
+
