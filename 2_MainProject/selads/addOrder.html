@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html lang="ko-KR" class="lt-ie10 ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+  <title>주문등록 &#124; SELADS</title>
+  <link rel="stylesheet" href="css/ress.min.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/SpoqaHanSans-kr.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="../Resources/ionicons/ionicons.min.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/addOrder.css">
+  <link rel="shortcut icon" href="images/favicon_selads.png">
+</head>
+<body>
+    <div class="selards_header">
+      <div class="selards_wrap clearfix">
+        <h1 class="selards_logo unit_3">
+          <a href="#"><img src="images/selards_logos.svg" alt="SELARDS" width="150" height="48"></a>
+        </h1>
+        <nav class="header_gnb unit_6">
+          <ul class="reset-list">
+            <li><a href="#" class="slide_up">주문하기</a></li>
+            <li><a href="#" class="slide_up">주문내용확인</a></li>
+          </ul>
+        </nav><!--header_gnb-->
+        <nav class="header_unb unit_3">
+          <ul class="reset-list">
+            <li><a href="#">개인정보관리</a></li>
+            <li><a href="#" class="slide_up">로그아웃</a></li>
+          </ul>
+        </nav><!--header_unb-->
+      </div><!--header_wrap-->
+    </div><!-- selards_header-->
+
+    <!-- main -->
+    <div class="main clearfix">
+      <div class="main_edge"></div>
+      <!-- 접근성 관점에서 넣어줘야 한다. -->
+      <div class="order_label">
+        <h2>주문하기 STEP 02</h2>
+      </div>
+
+      <div class="heading_group">
+        <h3 class="heading">주문 등록</h3>
+        <p class="heading_description">판매채널을 선택 후, 해당 채널의 고객 주문 정보 엑셀 파일을 업로드 해주세요.</p>
+        <ul class="heading_pageNavigation reset-list">
+            <li>홈</li>
+            <li>주문하기</li>
+            <li>주문 등록</li>
+          </ul>
+      </div><!-- heading_group -->
+
+      <!-- 01 channel-info-->
+      <div class="entire_form_order unit_7 ml_3 clearfix">
+        <div class="channel_register">
+            <h4 class="mb_4">01 판매 채널 정보 등록</h4>
+            <form action="#">
+            <div class="btn_channel_drop_wrap unit_2">
+                  <button class="btn_channel_drop">채널 선택
+                    <span class="ion-chevron-down ml_2"></span>
+                  </button>
+                  <div class="btn_channel_drop_contents">
+                    <ul>
+                      <li><a href="#">와디즈</a></li>
+                      <li><a href="#">텀블벅</a></li>
+                    </ul>
+                  </div><!--btn_channel_drop_contents-->
+              </div><!-- btn_channel_drop_wrap --> 
+              <input type="file" id="ch_file" class="unit_5 ml_2" name="upload" />
+            </form>
+        </div><!-- channel_register-->
+      </div><!-- entire_form_order -->
+      <div class="channel_add_wrap unit_2 ml_2 clearfix">
+         <button class="btn_default unit_2 no_gutter">판매 채널 추가</button>
+      </div><!-- channel_add_wrap -->
+
+      <!-- order_info_table -->
+      <div class="order_info unit_10 clearfix ml_3">
+            <h4 class="mb_4">02 주문 정보 입력</h4>
+            <table class="table">
+                <caption class="readable-hidden">주문정보입력</caption>
+                <thead>
+                    <tr class="table-grid">
+                        <th class="col-1-10">번호</th>
+                        <th class="col-1-10">상품명</th>
+                        <th class="col-2-10">추가 사은품 여부</th>
+                        <th class="col-2-10">포장여부</th>
+                        <th class="col-2-10">1:1 매칭</th>
+                        <th class="col-2-10">배송방식</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>스냅백</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>스냅백</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>스냅백</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>스냅백</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                        <td>없음</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!-- order_info -->
+
+      <input type="submit" value="주문정보 등록" class="btn_order_register btn_primary unit_3 no_gutter mb_4">
+      
+    </div><!-- main -->
+    
+    <div class="footer clearfix">
+      <div class="footer_logo unit_3">
+        <a href="#"><img src="images/footer-svg-logo.png" alt="SELARDS" width="150" height="48"></a>
+      </div>
+      <div class="inner_footer unit_9">
+          상점명 : (주)두손컴퍼니 | 대표자 : 박찬재 | 04793 서울특별시 성동구 아차산로5길 24-40 (성수동2가) 2층 두손컴퍼니 [사업자정보확인]<br>
+  전화 : 070-4773-0080 | 팩스 : 02-499-7622 | 사업자등록번호 : 201-86-31231 | 통신판매업신고 : 제 2014-서울중구-0229호<br>
+  개인정보관리책임자 : 조은애(<a href="#">info@dohands.com</a>) |  배송조회 : CJ대한통운택배<br>
+  Copyright © (주)두손컴퍼니. All rights reserved.
+        </div><!--inner_footer-->
+    </div><!-- footer -->
+
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/toggleBaseline.js"></script>
+</body>
+</html>

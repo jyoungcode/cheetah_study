@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+  <title>개인정보관리 &#124; SELADS</title>
+  <link rel="stylesheet" href="css/ress.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/SpoqaHanSans-kr.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/mypage.css">
+  <link rel="shortcut icon" href="images/favicon_selads.png">
+</head>
+<body>
+  <div class="selards_header">
+    <div class="selards_wrap clearfix">
+      <h1 class="selards_logo unit_3">
+        <a href="#"><img src="images/selards_logos.svg" alt="SELARDS" width="150" height="48"></a>
+      </h1>
+      <!--[start]-->
+      <nav class="header_gnb unit_6">
+        <ul class="reset-list">
+          <li><a href="#" class="slide_up">주문하기</a></li>
+          <li><a href="#" class="slide_up">주문내용확인</a></li>
+        </ul>
+      </nav><!--header_gnb-->
+      <nav class="header_unb unit_3">
+        <ul class="reset-list">
+          <li><a href="#">개인정보관리</a></li>
+          <li><a href="#" class="slide_up">로그아웃</a></li>
+        </ul>
+      </nav><!--header_unb-->
+      <!--[end]-->
+    </div><!--header_wrap-->
+  </div><!-- selards_header-->
+
+
+  <div class="main clearfix">
+    <div class="main_edge"></div>
+    <div class="wrap">
+      <div class="heading_group">
+        <h3 class="heading">개인정보관리</h3>
+        <p class="heading_description">등록하신 정보를 관리하세요.</p>  
+      </div>
+      <section class="grid push_1">
+
+        <div class="required_info grid unit_8">
+          <fieldset>
+            <legend>01 신상정보</legend>
+            <ul>
+              <li>
+                <label class="info_label unit_2" for="user_id">아이디</label>
+                <input class="input_default" id="user_id" type="text" value="불러올 사용자 아이디" disabled>
+              </li>
+              <li>
+                <label class="info_label unit_2" for="user_name">이름</label>
+                <input class="input_default" id="user_name" type="text" placeholder="사용자 이름" value="사용자 이름">
+              </li>
+              <li>
+                  <label class="info_label unit_2" for="user_password">비밀번호</label>
+                  <input class="input_default" type="password" placeholder="새로운 비밀번호">
+              </li>
+              <li>
+                  <label class="info_label unit_2" for="user_password">비밀번호 확인</label>
+                  <input class="input_default" type="password" placeholder="비밀번호 재입력">
+              </li>
+            </ul>
+        </div><!--required_info-->
+
+        <div class="business_info grid unit_8">
+          <fieldset>
+            <legend>02 업체정보</legend>
+            <ul>
+              <li>
+                <label class="info_label unit_2" for="company_name">업체명</label>
+                <input class="input_default" id="company_name" type="text" placeholder="업체명" value="업체명">
+              </li>
+              <li>
+                <label class="info_label unit_2" for="company_code">사업자등록번호
+                </label>
+                  <input class="input_default" id="company_code" type="text" placeholder="사업자 등록번호" value="사업자 등록번호">
+              </li>
+              <li>
+                <label class="info_label unit_2" for="company_chargePerson">담당자명</label>
+                <input class="input_default" id="company_chargePerson" type="text" placeholder="담당자 이름" value="담당자 이름">
+              </li>
+              <li class="form_manager_email clearfix">
+                  <ul>
+                    <li>
+                      <label class="info_label unit_2" for="company_email">담당자 이메일</label>
+                      <input class="input_default" id="company_email" type="text" placeholder="담당자 이메일" value="이메일 아이디">
+                      &commat;<input class="input_default" type="text" placeholder="이메일 도메인" value="이메일 도메인">
+                    <li>
+                  </li>
+                </ul>
+              </li><!--form_manager_email-->
+              <li>
+                <label class="info_label unit_2" for="company_phone">휴대폰 번호</label>
+                <input class="input_default" id="company_phone" type="text" placeholder="휴대폰 번호(-없이 입력)" value="휴대폰 번호">
+              </li>
+            </ul>
+          </fieldset>
+        </div><!--business_info-->
+        <div class="unit_8">
+          <input class="btn_primary unit_3 btn_center" type="submit" value="수정하기"></a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  <div class="footer clearfix">
+    <div class="footer_logo unit_3">
+      <a href="#"><img src="images/footer-svg-logo.png" alt="SELARDS" width="150" height="48"></a>
+    </div>
+    <div class="inner_footer unit_9">
+        상점명 : (주)두손컴퍼니 | 대표자 : 박찬재 | 04793 서울특별시 성동구 아차산로5길 24-40 (성수동2가) 2층 두손컴퍼니 [사업자정보확인]<br>
+전화 : 070-4773-0080 | 팩스 : 02-499-7622 | 사업자등록번호 : 201-86-31231 | 통신판매업신고 : 제 2014-서울중구-0229호<br>
+개인정보관리책임자 : 조은애(<a href="#">info@dohands.com</a>) |  배송조회 : CJ대한통운택배<br>
+Copyright © (주)두손컴퍼니. All rights reserved.
+
+      </div><!--inner_footer-->
+  </div>
+
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/btn_toggle.js"></script>
+<script src="js/toggleBaseline.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+@charset "utf-8";
+/*! common.css © yamoo9.net, 2016 */
+
+a { text-decoration: none; }
+
+/* 목록 초기화 재사용 가능한 스타일 모듈 */
+ul, ol{
+  margin-top:    0;
+  margin-bottom: 0;
+  padding-left:  0;
+  list-style: none;
+}
+
+/* 이미지 하단 공백 제거 */
+img {
+  vertical-align: bottom;
+}
+
+.blank-bottom-img img + *,
+img.blank-bottom + * {
+  overflow: hidden;
+}
+
+img.flex-img {
+  width: 100%;
+  height: auto;
+}
+
+img.horizontal-center-img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/* clearfix */
+/*.clearfix::after,
+.cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}*/
+
+.lt-ie8 .clearfix,
+.lt-ie8 .cf {
+  zoom: 1;
+}
+
+.readable-hidden {
+  overflow: hidden;
+  width:    1px;
+  height:   1px;
+  margin:   -1px;
+  border:   0;
+  padding:  0;
+}
+.readable-hidden.focusable:focus {
+  overflow: visible;
+  position: static;
+  clip:     auto;
+  width:    auto;
+  height:   auto;
+  margin:   0;
+}
+
+/* All pages common module */
+body { background-color: #f2f2f2;}
+
+/* header */
+.selards_header {
+  /*position: fixed;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  width: 100%;
+  height: 96px;
+  border-bottom: 1px solid #dedede;
+  box-shadow: 0px 2px 1px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+.selards_wrap, .footer, .main {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.selards_logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+[class^="header_"] a {
+  display: block;
+  text-align: center;
+  height: 96px;
+  text-decoration: none;
+  line-height: 96px;
+  cursor: pointer;
+  color: #232323;
+  font-weight: bold;
+}
+
+.header_unb a {
+   color: #747474;
+ }
+
+.header_gnb li {
+  float: left;
+  margin-right: 30px;
+}
+
+.header_unb ul {
+  float: right;
+}
+
+.header_unb li {
+  float: left;
+  margin-left: 30px;
+}
+
+.header_gnb a:hover {
+  border-bottom: 5px solid #00A651;
+  color: #00A651;
+  transition: all 0.25s;
+}
+.header_unb a:hover {
+  color: #aaa;
+  transition: all 0.25s;
+}
+
+/* footer */
+.footer {
+  height: 144px;
+  padding-top: 24px;
+  font-size: 12px;
+}
+.inner_footer {
+  line-height: 24px;
+  letter-spacing: -0.3px;
+}
+
+.inner_footer a {
+  text-decoration: none;
+}
+
+/* main_content_placement */
+.main {
+  margin-top: 48px;
+  min-height: 800px;
+  background: #fff;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  padding: 72px 70px 27px 70px;
+}
+
+/* be folded paper shape */
+.main::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url('../images/content-box-edge.png');
+  width: 80px;
+  height: 80px;
+}
+.main_edge {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 110px solid #f2f2f2;
+  border-left: 110px solid transparent;
+  top: -20px;
+  right: -14px;
+  transform: scale(0.85); 
+
+
+}
+
+/* order_label */
+.main .order_label {
+  width: 180px;
+  height: 30px;
+  padding: 3px 18px;
+  background: #00A651;
+  color: #fff;
+  position: absolute;
+  top: 18px;
+  left: -18px;
+}
+
+.order_label > h2 {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  line-height: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.order_label::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 80px solid #007c3c;
+    border-left: 90px solid transparent;
+    position: absolute;
+    /* scale 0.2는 border-top 80*0.2 = 16px에서 8 */
+    top: -2px; 
+    /* border*scale=90*0.2 절반 + 부모 left-18px + 나머지  */ 
+    left: -36px; 
+
+    /* IE 9 */ 
+    -ms-transform: scale(0.2);
+    /*Safari*/
+    -webkit-transform: scale(0.2);
+    /*Standard syntax */
+    transform: scale(0.2);
+}
+
+.align_left {
+  float: left;
+}
+
+.align_right {
+  float: right;
+}
+
+.ml_1 { margin-left: 10px; }
+.ml_2 { margin-left: 20px; }
+.ml_3 { margin-left: 30px; }
+.ml_4 { margin-left: 40px; }
+.mr_1 { margin-right: 10px; }
+.mr_2 { margin-right: 20px; }
+.mr_3 { margin-right: 30px; }
+.mr_4 { margin-right: 40px; }
+.mb_1 { margin-bottom: 12px; }
+.mb_2 { margin-bottom: 24px; }
+.mb_3 { margin-bottom: 36px; }
+.mb_4 { margin-bottom: 48px; }
